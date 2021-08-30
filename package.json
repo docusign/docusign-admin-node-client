@@ -1,6 +1,6 @@
 {
   "name": "docusign-admin",
-  "version": "1.0.0-rc2",
+  "version": "1.0.0-beta",
   "description": "The DocuSign Admin API enables you to automate user management with your existing systems while ensuring governance and compliance.",
   "license": "MIT",
   "main": "src/index.js",
