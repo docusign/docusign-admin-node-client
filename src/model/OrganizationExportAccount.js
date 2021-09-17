@@ -2,7 +2,7 @@
  * DocuSign Admin API
  * An API for an organization administrator to manage organizations, accounts and users
  *
- * OpenAPI spec version: v2
+ * OpenAPI spec version: v2.1
  * Contact: devcenter@docusign.com
  *
  * NOTE: This class is auto generated. Do not edit the class manually and submit a new issue instead.
