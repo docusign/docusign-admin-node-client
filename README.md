@@ -7,7 +7,7 @@
 
 [NPM module](https://www.npmjs.com/package/docusign-orgadmin) that wraps the <a href="https://www.docusign.com">DocuSign</a> OrgAdmin API
 
-[Documentation about the DocuSign OrgAdmin API](https://developers.docusign.com/docs/orgadmin-api)
+[Documentation about the DocuSign Admin API](https://developers.docusign.com/docs/admin-api)
 
 <!---
 [Changelog](./CHANGELOG.md)
@@ -18,7 +18,7 @@ commented out
 ## Requirements
 - Node 4
 - Free [Developer Account](https://go.docusign.com/sandbox/productshot/?elqCampaignId=16531)
-- DocuSign OrgAdmin account connected to your Developer account. [Here is how to create a OrgAdmin developer account](https://developers.docusign.com/docs/orgadmin-api/orgadmin101/create-account)
+- DocuSign Admin account connected to your Developer account. [Here is how to create a developer account](https://go.docusign.com/o/sandbox/?ga=2.70927056.1363819232.1590515244-192278368.1546193875&ECID=20890&elqCampaignId=20890&LS=NA_DEV_BOTH_BetaSite_2020-05&utm_campaign=NA_DEV_BOTH_BetaSite_2020-05&Channel=DDCUS000016968056&cName=DocuSign.com&postActivateUrl=https://developers.docusign.com/)
 
 ## Compatibility
 
@@ -34,7 +34,7 @@ This SDK will soon be provided as open-source for cases where you would like to 
 
 1. Open your preferred command-line console, then navigate to your project.
 2. In the console, type the following commands:  
-   **npm install docusign-orgadmin -save**
+   **npm install docusign-admin -save**
 
 
 ## Dependencies
