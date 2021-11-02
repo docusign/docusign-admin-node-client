@@ -73,7 +73,7 @@ Log issues against this client through GitHub. We also have an [active developer
 
 ## License
 
-The DocuSign OrgAdmin Node Client is licensed under the [MIT License](https://github.com/docusign/docusign-orgadmin-node-client/blob/master/LICENSE).
+The DocuSign Admin Node Client is licensed under the [MIT License](https://github.com/docusign/docusign-orgadmin-node-client/blob/master/LICENSE).
 
 [npm-image]: https://img.shields.io/npm/v/docusign-orgadmin.svg?style=flat
 [npm-url]: https://npmjs.org/package/docusign-orgadmin
