@@ -1,11 +1,11 @@
-# The Official DocuSign OrgAdminn Node Client
+# The Official DocuSign Admin Node Client
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
-[NPM module](https://www.npmjs.com/package/docusign-orgadmin) that wraps the <a href="https://www.docusign.com">DocuSign</a> OrgAdmin API
+[NPM module](https://www.npmjs.com/package/docusign-admin) that wraps the <a href="https://www.docusign.com">DocuSign</a> Admin API
 
 [Documentation about the DocuSign Admin API](https://developers.docusign.com/docs/admin-api)
 
@@ -26,7 +26,7 @@ commented out
 
 ## Note:
 
-This SDK will soon be provided as open-source for cases where you would like to make additional changes that the SDK does not provide out-of-the-box. If you simply want to use the SDK with any of the examples shown in the [Developer Center](https://developers.docusign.com/docs/orgadmin-api/how-to/), follow the installation instructions below.
+This SDK will soon be provided as open-source for cases where you would like to make additional changes that the SDK does not provide out-of-the-box. If you simply want to use the SDK with any of the examples shown in the [Developer Center](https://developers.docusign.com/docs/admin-api/how-to/), follow the installation instructions below.
 
 ## Installation
 
