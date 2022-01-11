@@ -114,7 +114,7 @@ describe('SDK Unit Tests:', function (done) {
         assert.notEqual(response.created, undefined);
         fs.unlink(csvPathFilled, function () {});
         setTimeout(function () {
-          bulkImportApi.delete(response.id);
+          // bulkImportApi.delete(response.id);
         }, 300);
         return done();
       })
