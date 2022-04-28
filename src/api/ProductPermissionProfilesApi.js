@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-	define(['Configuration', 'ApiClient', 'model/ProductPermissionProfilesRequest', 'model/ProductPermissionProfilesResponse', 'model/UserProductPermissionProfilesResponse'], factory);
+	define(['Configuration', 'ApiClient', 'model/ProductPermissionProfilesRequest', 'model/ProductPermissionProfilesResponse', 'model/RemoveUserProductsResponse', 'model/UserProductPermissionProfilesRequest', 'model/UserProductPermissionProfilesResponse', 'model/UserProductProfileDeleteRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/ProductPermissionProfilesRequest'), require('../model/ProductPermissionProfilesResponse'), require('../model/UserProductPermissionProfilesResponse'));
+    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/ProductPermissionProfilesRequest'), require('../model/ProductPermissionProfilesResponse'), require('../model/RemoveUserProductsResponse'), require('../model/UserProductPermissionProfilesRequest'), require('../model/UserProductPermissionProfilesResponse'), require('../model/UserProductProfileDeleteRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.DocusignAdmin) {
       root.DocusignAdmin = {};
     }
-    root.DocusignAdmin.ProductPermissionProfilesApi = factory(root.DocusignAdmin.Configuration, root.DocusignAdmin.ApiClient, root.DocusignAdmin.ProductPermissionProfilesRequest, root.DocusignAdmin.ProductPermissionProfilesResponse, root.DocusignAdmin.UserProductPermissionProfilesResponse);
+    root.DocusignAdmin.ProductPermissionProfilesApi = factory(root.DocusignAdmin.Configuration, root.DocusignAdmin.ApiClient, root.DocusignAdmin.ProductPermissionProfilesRequest, root.DocusignAdmin.ProductPermissionProfilesResponse, root.DocusignAdmin.RemoveUserProductsResponse, root.DocusignAdmin.UserProductPermissionProfilesRequest, root.DocusignAdmin.UserProductPermissionProfilesResponse, root.DocusignAdmin.UserProductProfileDeleteRequest);
   }
-}(this, function(Configuration, ApiClient, ProductPermissionProfilesRequest, ProductPermissionProfilesResponse, UserProductPermissionProfilesResponse) {
+}(this, function(Configuration, ApiClient, ProductPermissionProfilesRequest, ProductPermissionProfilesResponse, RemoveUserProductsResponse, UserProductPermissionProfilesRequest, UserProductPermissionProfilesResponse, UserProductProfileDeleteRequest) {
   'use strict';
 
   /**
@@ -118,6 +118,71 @@
 
       return this.apiClient.callApi(
         '/v2.1/organizations/{organizationId}/accounts/{accountId}/products/users/{userId}/permission_profiles', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    };
+
+    /**
+     * (Optional) Callback function to receive the result of the addUserProductPermissionProfilesByEmail operation. If none specified a Promise will be returned.
+     * @callback module:api/ProductPermissionProfilesApi~addUserProductPermissionProfilesByEmailCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UserProductPermissionProfilesResponse} data The data returned by the service call.
+     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
+     */
+
+    /**
+     * Assign user to permission profiles for one or more products
+     * Required scopes: user_write
+     * @param {String} organizationId The organization ID GUID
+     * @param {String} accountId The account ID GUID
+     * @param {module:model/UserProductPermissionProfilesRequest} userProductPermissionProfilesRequest Request object
+     * @param {module:api/ProductPermissionProfilesApi~addUserProductPermissionProfilesByEmailCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UserProductPermissionProfilesResponse}
+     */
+    this.addUserProductPermissionProfilesByEmail = function(userProductPermissionProfilesRequest, organizationId, accountId, callback) {
+      var postBody = userProductPermissionProfilesRequest;
+
+      // verify the required parameter 'organizationId' is set
+      if (organizationId === undefined || organizationId === null) {
+        throw new Error("Missing the required parameter 'organizationId' when calling addUserProductPermissionProfilesByEmail");
+      }
+
+      // verify the required parameter 'accountId' is set
+      if (accountId === undefined || accountId === null) {
+        throw new Error("Missing the required parameter 'accountId' when calling addUserProductPermissionProfilesByEmail");
+      }
+
+      // verify the required parameter 'userProductPermissionProfilesRequest' is set
+      if (userProductPermissionProfilesRequest === undefined || userProductPermissionProfilesRequest === null) {
+        throw new Error("Missing the required parameter 'userProductPermissionProfilesRequest' when calling addUserProductPermissionProfilesByEmail");
+      }
+
+      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
+        if (typeof optsOrCallback !== 'undefined') {
+          optsOrCallback = callback;
+        }
+        callback = arguments[arguments.length-1];
+      }
+
+      var pathParams = {
+        'organizationId': organizationId,
+        'accountId': accountId
+      };
+      var queryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = UserProductPermissionProfilesResponse;
+
+      return this.apiClient.callApi(
+        '/v2.1/organizations/{organizationId}/accounts/{accountId}/products/permission_profiles/users', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -243,6 +308,140 @@
 
       return this.apiClient.callApi(
         '/v2.1/organizations/{organizationId}/accounts/{accountId}/products/users/{userId}/permission_profiles', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    };
+
+    /**
+     * (Optional) Callback function to receive the result of the getUserProductPermissionProfilesByEmail operation. If none specified a Promise will be returned.
+     * @callback module:api/ProductPermissionProfilesApi~getUserProductPermissionProfilesByEmailCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UserProductPermissionProfilesResponse} data The data returned by the service call.
+     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
+     */
+
+    /**
+     * Remove user from permission profiles for one or more products
+     * Required scopes: user_write
+     * @param {String} organizationId The organization ID GUID
+     * @param {String} accountId The account ID GUID
+     * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {String} optsOrCallback.email Email address of the requested user
+     * @param {module:api/ProductPermissionProfilesApi~getUserProductPermissionProfilesByEmailCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UserProductPermissionProfilesResponse}
+     */
+    this.getUserProductPermissionProfilesByEmail = function(organizationId, accountId, optsOrCallback, callback) {
+      optsOrCallback = optsOrCallback || {};
+
+      if (typeof optsOrCallback === 'function') {
+        callback = optsOrCallback;
+        optsOrCallback = {};
+      }
+
+      var postBody = null;
+
+      // verify the required parameter 'organizationId' is set
+      if (organizationId === undefined || organizationId === null) {
+        throw new Error("Missing the required parameter 'organizationId' when calling getUserProductPermissionProfilesByEmail");
+      }
+
+      // verify the required parameter 'accountId' is set
+      if (accountId === undefined || accountId === null) {
+        throw new Error("Missing the required parameter 'accountId' when calling getUserProductPermissionProfilesByEmail");
+      }
+
+      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
+        if (typeof optsOrCallback !== 'undefined') {
+          optsOrCallback = callback;
+        }
+        callback = arguments[arguments.length-1];
+      }
+
+      var pathParams = {
+        'organizationId': organizationId,
+        'accountId': accountId
+      };
+      var queryParams = {
+        'email': optsOrCallback['email']
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = UserProductPermissionProfilesResponse;
+
+      return this.apiClient.callApi(
+        '/v2.1/organizations/{organizationId}/accounts/{accountId}/products/permission_profiles/users', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    };
+
+    /**
+     * (Optional) Callback function to receive the result of the removeUserProductPermission operation. If none specified a Promise will be returned.
+     * @callback module:api/ProductPermissionProfilesApi~removeUserProductPermissionCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RemoveUserProductsResponse} data The data returned by the service call.
+     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
+     */
+
+    /**
+     * Remove user from permission profiles for one or more products
+     * Required scopes: user_write
+     * @param {String} organizationId The organization ID GUID
+     * @param {String} accountId The account ID GUID
+     * @param {module:model/UserProductProfileDeleteRequest} userProductPermissionProfilesRequest Request object
+     * @param {module:api/ProductPermissionProfilesApi~removeUserProductPermissionCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RemoveUserProductsResponse}
+     */
+    this.removeUserProductPermission = function(userProductPermissionProfilesRequest, organizationId, accountId, callback) {
+      var postBody = userProductPermissionProfilesRequest;
+
+      // verify the required parameter 'organizationId' is set
+      if (organizationId === undefined || organizationId === null) {
+        throw new Error("Missing the required parameter 'organizationId' when calling removeUserProductPermission");
+      }
+
+      // verify the required parameter 'accountId' is set
+      if (accountId === undefined || accountId === null) {
+        throw new Error("Missing the required parameter 'accountId' when calling removeUserProductPermission");
+      }
+
+      // verify the required parameter 'userProductPermissionProfilesRequest' is set
+      if (userProductPermissionProfilesRequest === undefined || userProductPermissionProfilesRequest === null) {
+        throw new Error("Missing the required parameter 'userProductPermissionProfilesRequest' when calling removeUserProductPermission");
+      }
+
+      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
+        if (typeof optsOrCallback !== 'undefined') {
+          optsOrCallback = callback;
+        }
+        callback = arguments[arguments.length-1];
+      }
+
+      var pathParams = {
+        'organizationId': organizationId,
+        'accountId': accountId
+      };
+      var queryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = RemoveUserProductsResponse;
+
+      return this.apiClient.callApi(
+        '/v2.1/organizations/{organizationId}/accounts/{accountId}/products/users', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

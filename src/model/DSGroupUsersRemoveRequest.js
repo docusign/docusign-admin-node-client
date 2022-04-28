@@ -36,12 +36,11 @@
    * Constructs a new <code>DSGroupUsersRemoveRequest</code>.
    * @alias module:model/DSGroupUsersRemoveRequest
    * @class
-   * @param userIds {Array.<String>} 
    */
-  var exports = function(userIds) {
+  var exports = function() {
     var _this = this;
 
-    _this['user_ids'] = userIds;
+
   };
 
   /**
@@ -58,6 +57,9 @@
       if (data.hasOwnProperty('user_ids')) {
         obj['user_ids'] = ApiClient.convertToType(data['user_ids'], ['String']);
       }
+      if (data.hasOwnProperty('user_emails')) {
+        obj['user_emails'] = ApiClient.convertToType(data['user_emails'], ['String']);
+      }
     }
     return obj;
   }
@@ -66,6 +68,10 @@
    * @member {Array.<String>} user_ids
    */
   exports.prototype['user_ids'] = undefined;
+  /**
+   * @member {Array.<String>} user_emails
+   */
+  exports.prototype['user_emails'] = undefined;
 
 
 
