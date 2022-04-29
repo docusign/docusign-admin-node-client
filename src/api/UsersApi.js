@@ -442,6 +442,139 @@
     };
 
     /**
+     * (Optional) Callback function to receive the result of the getUserDSProfile operation. If none specified a Promise will be returned.
+     * @callback module:api/UsersApi~getUserDSProfileCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UsersDrilldownResponse} data The data returned by the service call.
+     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
+     */
+
+    /**
+     * Returns user information using the userId for lookup.
+     * Required scopes: user_read
+     * @param {String} organizationId The organization ID Guid
+     * @param {String} userId The user ID Guid
+     * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {Boolean} optsOrCallback.sort Sorts user information by account name ascending
+     * @param {module:api/UsersApi~getUserDSProfileCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UsersDrilldownResponse}
+     */
+    this.getUserDSProfile = function(organizationId, userId, optsOrCallback, callback) {
+      optsOrCallback = optsOrCallback || {};
+
+      if (typeof optsOrCallback === 'function') {
+        callback = optsOrCallback;
+        optsOrCallback = {};
+      }
+
+      var postBody = null;
+
+      // verify the required parameter 'organizationId' is set
+      if (organizationId === undefined || organizationId === null) {
+        throw new Error("Missing the required parameter 'organizationId' when calling getUserDSProfile");
+      }
+
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getUserDSProfile");
+      }
+
+      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
+        if (typeof optsOrCallback !== 'undefined') {
+          optsOrCallback = callback;
+        }
+        callback = arguments[arguments.length-1];
+      }
+
+      var pathParams = {
+        'organizationId': organizationId,
+        'userId': userId
+      };
+      var queryParams = {
+        'sort': optsOrCallback['sort']
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = UsersDrilldownResponse;
+
+      return this.apiClient.callApi(
+        '/v2.1/organizations/{organizationId}/users/{userId}/dsprofile', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    };
+
+    /**
+     * (Optional) Callback function to receive the result of the getUserDSProfilesByEmail operation. If none specified a Promise will be returned.
+     * @callback module:api/UsersApi~getUserDSProfilesByEmailCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UsersDrilldownResponse} data The data returned by the service call.
+     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
+     */
+
+    /**
+     * Returns DS user profile information.
+     * Required scopes: user_read
+     * @param {String} organizationId The organization ID Guid
+     * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {String} optsOrCallback.email The email address of the user
+     * @param {Boolean} optsOrCallback.sort Sorts user information by account name ascending
+     * @param {module:api/UsersApi~getUserDSProfilesByEmailCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UsersDrilldownResponse}
+     */
+    this.getUserDSProfilesByEmail = function(organizationId, optsOrCallback, callback) {
+      optsOrCallback = optsOrCallback || {};
+
+      if (typeof optsOrCallback === 'function') {
+        callback = optsOrCallback;
+        optsOrCallback = {};
+      }
+
+      var postBody = null;
+
+      // verify the required parameter 'organizationId' is set
+      if (organizationId === undefined || organizationId === null) {
+        throw new Error("Missing the required parameter 'organizationId' when calling getUserDSProfilesByEmail");
+      }
+
+      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
+        if (typeof optsOrCallback !== 'undefined') {
+          optsOrCallback = callback;
+        }
+        callback = arguments[arguments.length-1];
+      }
+
+      var pathParams = {
+        'organizationId': organizationId
+      };
+      var queryParams = {
+        'email': optsOrCallback['email'],
+        'sort': optsOrCallback['sort']
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = UsersDrilldownResponse;
+
+      return this.apiClient.callApi(
+        '/v2.1/organizations/{organizationId}/users/dsprofile', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    };
+
+    /**
      * (Optional) Callback function to receive the result of the getUserProfiles operation. If none specified a Promise will be returned.
      * @callback module:api/UsersApi~getUserProfilesCallback
      * @param {String} error Error message, if any.
