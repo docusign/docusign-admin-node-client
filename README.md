@@ -75,11 +75,11 @@ Log issues against this client through GitHub. We also have an [active developer
 
 The DocuSign Admin Node Client is licensed under the [MIT License](https://github.com/docusign/docusign-orgadmin-node-client/blob/master/LICENSE).
 
-[npm-image]: https://img.shields.io/npm/v/docusign-orgadmin.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/docusign-admin.svg?style=flat
 [npm-url]: https://npmjs.org/package/docusign-admin
-[downloads-image]: https://img.shields.io/npm/dm/docusign-orgadmin.svg?style=flat
-[downloads-url]: https://npmjs.org/package/docusign-orgadmin
-[travis-image]: https://img.shields.io/travis/docusign/docusign-orgadmin-node-client.svg?style=flat
-[travis-url]: https://travis-ci.org/docusign/docusign-orgadmin-node-client
-[coveralls-image]: https://coveralls.io/repos/github/docusign/docusign-orgadmin-node-client/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/docusign/docusign-orgadmin-node-client?branch=master
+[downloads-image]: https://img.shields.io/npm/dm/docusign-admin.svg?style=flat
+[downloads-url]: https://npmjs.org/package/docusign-admin
+[travis-image]: https://img.shields.io/travis/docusign/docusign-admin-node-client.svg?style=flat
+[travis-url]: https://travis-ci.org/docusign/docusign-admin-node-client
+[coveralls-image]: https://coveralls.io/repos/github/docusign/docusign-admin-node-client/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/docusign/docusign-odmin-node-client?branch=master
