@@ -48,7 +48,7 @@ This client has the following external dependencies:
 ### Optional:
 
 - Async v2.6.2
-- Jsonwebtoken v8.2.0
+- Jsonwebtoken v9.0.0
 - Passport-oauth2
 - Path
 
@@ -82,4 +82,4 @@ The DocuSign Admin Node Client is licensed under the [MIT License](https://githu
 [travis-image]: https://img.shields.io/travis/docusign/docusign-admin-node-client.svg?style=flat
 [travis-url]: https://travis-ci.org/docusign/docusign-admin-node-client
 [coveralls-image]: https://coveralls.io/repos/github/docusign/docusign-admin-node-client/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/docusign/docusign-odmin-node-client?branch=master
+[coveralls-url]: https://coveralls.io/github/docusign/docusign-admin-node-client?branch=master
