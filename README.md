@@ -77,7 +77,7 @@ The DocuSign Admin Node Client is licensed under the [MIT License](https://githu
 
 [npm-image]: https://img.shields.io/npm/v/docusign-admin.svg?style=flat
 [npm-url]: https://npmjs.org/package/docusign-admin
-[downloads-image]: https://img.shields.io/npm/dm/docusign-orgadmin.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/docusign-admin.svg?style=flat
 [downloads-url]: https://npmjs.org/package/docusign-admin
 [travis-image]: https://img.shields.io/travis/docusign/docusign-admin-node-client.svg?style=flat
 [travis-url]: https://travis-ci.org/docusign/docusign-admin-node-client
