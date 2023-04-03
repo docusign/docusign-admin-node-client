@@ -16,13 +16,13 @@ commented out
 
 
 ## Requirements
-- Node 4
+- Node 12
 - Free [Developer Account](https://go.docusign.com/sandbox/productshot/?elqCampaignId=16531)
 - DocuSign Admin account connected to your Developer account. [Here is how to create a developer account](https://go.docusign.com/o/sandbox/?ga=2.70927056.1363819232.1590515244-192278368.1546193875&ECID=20890&elqCampaignId=20890&LS=NA_DEV_BOTH_BetaSite_2020-05&utm_campaign=NA_DEV_BOTH_BetaSite_2020-05&Channel=DDCUS000016968056&cName=DocuSign.com&postActivateUrl=https://developers.docusign.com/)
 
 ## Compatibility
 
-- Node 4+
+- Node 12+
 
 ## Note:
 
