@@ -181,15 +181,21 @@
      * Closes the Bulk User Import request
      * Required scopes: user_write
      * @param {String} organizationId The organization ID Guid
+     * @param {Object} fileCsv CSV file.
      * @param {module:api/BulkImportsApi~createBulkImportCloseUsersRequestCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/OrganizationImportResponse}
      */
-    this.createBulkImportCloseUsersRequest = function(organizationId, callback) {
+    this.createBulkImportCloseUsersRequest = function(organizationId, fileCsv, callback) {
       var postBody = null;
 
       // verify the required parameter 'organizationId' is set
       if (organizationId === undefined || organizationId === null) {
         throw new Error("Missing the required parameter 'organizationId' when calling createBulkImportCloseUsersRequest");
+      }
+
+      // verify the required parameter 'fileCsv' is set
+      if (fileCsv === undefined || fileCsv === null) {
+        throw new Error("Missing the required parameter 'fileCsv' when calling createBulkImportCloseUsersRequest");
       }
 
       if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
@@ -207,10 +213,11 @@
       var headerParams = {
       };
       var formParams = {
+        'file.csv': fileCsv
       };
 
       var authNames = [];
-      var contentTypes = ['application/json'];
+      var contentTypes = ['multipart/form-data'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
 
