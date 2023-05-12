@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-	define(['Configuration', 'ApiClient', 'model/IndividualMembershipDataRedactionRequest', 'model/IndividualUserDataRedactionResponse', 'model/MemberGroupsResponse', 'model/OrganizationsResponse', 'model/PermissionsResponse'], factory);
+	define(['Configuration', 'ApiClient', 'model/MemberGroupsResponse', 'model/OrganizationsResponse', 'model/PermissionsResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/IndividualMembershipDataRedactionRequest'), require('../model/IndividualUserDataRedactionResponse'), require('../model/MemberGroupsResponse'), require('../model/OrganizationsResponse'), require('../model/PermissionsResponse'));
+    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/MemberGroupsResponse'), require('../model/OrganizationsResponse'), require('../model/PermissionsResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.DocusignAdmin) {
       root.DocusignAdmin = {};
     }
-    root.DocusignAdmin.AccountsApi = factory(root.DocusignAdmin.Configuration, root.DocusignAdmin.ApiClient, root.DocusignAdmin.IndividualMembershipDataRedactionRequest, root.DocusignAdmin.IndividualUserDataRedactionResponse, root.DocusignAdmin.MemberGroupsResponse, root.DocusignAdmin.OrganizationsResponse, root.DocusignAdmin.PermissionsResponse);
+    root.DocusignAdmin.AccountsApi = factory(root.DocusignAdmin.Configuration, root.DocusignAdmin.ApiClient, root.DocusignAdmin.MemberGroupsResponse, root.DocusignAdmin.OrganizationsResponse, root.DocusignAdmin.PermissionsResponse);
   }
-}(this, function(Configuration, ApiClient, IndividualMembershipDataRedactionRequest, IndividualUserDataRedactionResponse, MemberGroupsResponse, OrganizationsResponse, PermissionsResponse) {
+}(this, function(Configuration, ApiClient, MemberGroupsResponse, OrganizationsResponse, PermissionsResponse) {
   'use strict';
 
   /**
@@ -233,64 +233,6 @@
 
       return this.apiClient.callApi(
         '/v2/organizations/{organizationId}/accounts/{accountId}/permissions', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    };
-
-    /**
-     * (Optional) Callback function to receive the result of the redactIndividualMembershipData operation. If none specified a Promise will be returned.
-     * @callback module:api/AccountsApi~redactIndividualMembershipDataCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/IndividualUserDataRedactionResponse} data The data returned by the service call.
-     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
-     */
-
-    /**
-     * Redacts membership data for users with memberships in an account.
-     * Required scopes: user_data_redact
-     * @param {String} accountId The account ID Guid
-     * @param {module:model/IndividualMembershipDataRedactionRequest} requestModel The request body describing the membership to be redacted
-     * @param {module:api/AccountsApi~redactIndividualMembershipDataCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/IndividualUserDataRedactionResponse}
-     */
-    this.redactIndividualMembershipData = function(requestModel, accountId, callback) {
-      var postBody = requestModel;
-
-      // verify the required parameter 'accountId' is set
-      if (accountId === undefined || accountId === null) {
-        throw new Error("Missing the required parameter 'accountId' when calling redactIndividualMembershipData");
-      }
-
-      // verify the required parameter 'requestModel' is set
-      if (requestModel === undefined || requestModel === null) {
-        throw new Error("Missing the required parameter 'requestModel' when calling redactIndividualMembershipData");
-      }
-
-      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
-        if (typeof optsOrCallback !== 'undefined') {
-          optsOrCallback = callback;
-        }
-        callback = arguments[arguments.length-1];
-      }
-
-      var pathParams = {
-        'accountId': accountId
-      };
-      var queryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = [];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = IndividualUserDataRedactionResponse;
-
-      return this.apiClient.callApi(
-        '/v2/data_redaction/accounts/{accountId}/user', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
