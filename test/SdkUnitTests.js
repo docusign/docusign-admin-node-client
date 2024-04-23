@@ -124,7 +124,7 @@ describe('SDK Unit Tests:', function (done) {
           'principal_throttled',
           'organization_import_import_pending'
         ];
-        if (!validErrorCodes.includes(err.response.body.error)) {
+        if (!validErrorCodes.includes(err.body.error)) {
           return done(err);
         } else {
           return done();

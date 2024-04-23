@@ -99,7 +99,7 @@ Required scopes: asset_group_account_clone_write
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = AssetGroupAccountClone;
@@ -175,7 +175,7 @@ Required scopes: asset_group_account_clone_write
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = AssetGroupAccountClone;
@@ -239,7 +239,7 @@ Required scopes: asset_group_account_clone_write
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = AssetGroupAccountClones;
@@ -301,7 +301,7 @@ Required scopes: asset_group_account_clone_write
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = AssetGroupAccountsResponse;

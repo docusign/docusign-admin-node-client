@@ -97,7 +97,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationExportResponse;
@@ -155,7 +155,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationExportResponse;
@@ -214,7 +214,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Object;
@@ -273,7 +273,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Object;
@@ -332,7 +332,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationExportResponse;
@@ -384,7 +384,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationExportsResponse;
@@ -443,7 +443,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationExportResponse;
@@ -495,7 +495,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationExportsResponse;

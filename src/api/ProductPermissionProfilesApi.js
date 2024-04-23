@@ -111,7 +111,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = UserProductPermissionProfilesResponse;
@@ -176,7 +176,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = UserProductPermissionProfilesResponse;
@@ -235,7 +235,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = ProductPermissionProfilesResponse;
@@ -301,7 +301,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = ProductPermissionProfilesResponse;
@@ -370,7 +370,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = UserProductPermissionProfilesResponse;
@@ -435,7 +435,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = RemoveUserProductsResponse;
