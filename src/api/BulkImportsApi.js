@@ -98,7 +98,7 @@
         'file.csv': fileCsv
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['multipart/form-data'];
       var accepts = ['application/json'];
       var returnType = OrganizationAccountSettingsImportResponse;
@@ -157,7 +157,7 @@
         'file.csv': fileCsv
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['multipart/form-data'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
@@ -216,7 +216,7 @@
         'file.csv': fileCsv
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['multipart/form-data'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
@@ -268,7 +268,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
@@ -334,7 +334,7 @@
         'file.csv': fileCsv
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['multipart/form-data'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
@@ -400,7 +400,7 @@
         'file.csv': fileCsv
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['multipart/form-data'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
@@ -459,7 +459,7 @@
         'file.csv': fileCsv
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['multipart/form-data'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
@@ -518,7 +518,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Object;
@@ -577,7 +577,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Object;
@@ -636,7 +636,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationAccountSettingsImportResponse;
@@ -688,7 +688,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = [OrganizationAccountSettingsImportResponse];
@@ -747,7 +747,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['text/csv'];
       var returnType = Object;
@@ -806,7 +806,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportResponse;
@@ -858,7 +858,7 @@
       var formParams = {
       };
 
-      var authNames = [];
+      var authNames = ['docusignAccessCode'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = OrganizationImportsResponse;

@@ -3,6 +3,23 @@
 See [DocuSign Support Center](https://support.docusign.com/en/releasenotes/) for Product Release Notes.
 
 
+## [v2.3.0-rc1] - Admin API v2.1-1.3.0 - 2024-04-23
+### Changed
+**Security Updates**
+- Updated HTTP Client: Due to identified security vulnerabilities in Superagent proxy version 3.0.0, we have transitioned from using Superagent to the more secure Axios HTTP client. This update helps in safeguarding your interactions by patching potential security gaps.
+
+**New Features**
+- Proxy Support for HTTP Requests: We've introduced the ability to make HTTP requests through a proxy. This enhancement is particularly useful for users operating within corporate or restricted networks.
+- JWT Token Request Functionality: The new sendJWTTokenRequest method allows you to obtain authentication tokens without exposing your privateKey. This method is designed to enhance security in your authentication processes.
+
+**Changes to Existing Features**
+- Updated Callback Response Structure: We have made changes to the response structure for callbacks. If you are using callback functions in your integration, please note the updated response object attributes:
+> statusCode
+header
+body
+
+**Migration Guide**
+- For those using callback functions, please adjust your implementation to handle the new response structure as detailed above.
 ## [v2.3.0] - Admin API v2.1-1.3.0 - 2023-08-02
 ### Changed
 - Added support for version v2.1-1.3.0 of the DocuSign Admin API.
