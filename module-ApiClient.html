@@ -1,0 +1,4914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>module:ApiClient - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-api_AccountsApi.html">api/AccountsApi</a><ul class='methods'><li data-type='method'><a href="module-api_AccountsApi.html#getGroups">getGroups</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getOrganizations">getOrganizations</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getPermissions">getPermissions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#redactIndividualMembershipData">redactIndividualMembershipData</a></li></ul></li><li><a href="module-api_BulkExportsApi.html">api/BulkExportsApi</a><ul class='methods'><li data-type='method'><a href="module-api_BulkExportsApi.html#createAccountSettingsExport">createAccountSettingsExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#createUserListExport">createUserListExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#deleteAccountSettingsExport">deleteAccountSettingsExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#deleteUserListExport">deleteUserListExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getAccountSettingsExport">getAccountSettingsExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getAccountSettingsExports">getAccountSettingsExports</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getUserListExport">getUserListExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getUserListExports">getUserListExports</a></li></ul></li><li><a href="module-api_BulkImportsApi.html">api/BulkImportsApi</a><ul class='methods'><li data-type='method'><a href="module-api_BulkImportsApi.html#addBulkAccountSettingsImport">addBulkAccountSettingsImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportAddUsersRequest">createBulkImportAddUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportCloseUsersRequest">createBulkImportCloseUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportExternalCloseUsersRequest">createBulkImportExternalCloseUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportSingleAccountAddUsersRequest">createBulkImportSingleAccountAddUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportSingleAccountUpdateUsersRequest">createBulkImportSingleAccountUpdateUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportUpdateUsersRequest">createBulkImportUpdateUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#deleteBulkAccountSettingsImport">deleteBulkAccountSettingsImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#deleteBulkUserImport">deleteBulkUserImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkAccountSettingsImport">getBulkAccountSettingsImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkAccountSettingsImports">getBulkAccountSettingsImports</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkUserImportCSV">getBulkUserImportCSV</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkUserImportRequest">getBulkUserImportRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkUserImportRequests">getBulkUserImportRequests</a></li></ul></li><li><a href="module-api_DSGroupsApi.html">api/DSGroupsApi</a><ul class='methods'><li data-type='method'><a href="module-api_DSGroupsApi.html#addDSGroup">addDSGroup</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#addDSGroupUsers">addDSGroupUsers</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#deleteDSGroup">deleteDSGroup</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#getDSGroup">getDSGroup</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#getDSGroups">getDSGroups</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#getDSGroupUsers">getDSGroupUsers</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#removeDSGroupUsers">removeDSGroupUsers</a></li></ul></li><li><a href="module-api_IdentityProvidersApi.html">api/IdentityProvidersApi</a><ul class='methods'><li data-type='method'><a href="module-api_IdentityProvidersApi.html#getIdentityProviders">getIdentityProviders</a></li></ul></li><li><a href="module-api_OrganizationsApi.html">api/OrganizationsApi</a><ul class='methods'><li data-type='method'><a href="module-api_OrganizationsApi.html#redactIndividualUserData">redactIndividualUserData</a></li></ul></li><li><a href="module-api_ProductPermissionProfilesApi.html">api/ProductPermissionProfilesApi</a><ul class='methods'><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#addUserProductPermissionProfiles">addUserProductPermissionProfiles</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#addUserProductPermissionProfilesByEmail">addUserProductPermissionProfilesByEmail</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#getProductPermissionProfiles">getProductPermissionProfiles</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#getUserProductPermissionProfiles">getUserProductPermissionProfiles</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#getUserProductPermissionProfilesByEmail">getUserProductPermissionProfilesByEmail</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#removeUserProductPermission">removeUserProductPermission</a></li></ul></li><li><a href="module-api_ProvisionAssetGroupApi.html">api/ProvisionAssetGroupApi</a><ul class='methods'><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#cloneAssetGroupAccount">cloneAssetGroupAccount</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#createAssetGroupAccount">createAssetGroupAccount</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getAssetGroupAccountClone">getAssetGroupAccountClone</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getAssetGroupAccountClonesByOrgId">getAssetGroupAccountClonesByOrgId</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getAssetGroupAccounts">getAssetGroupAccounts</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getOrganizationPlanItems">getOrganizationPlanItems</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getSubAccountCreateProcessByAssetGroupWorkId">getSubAccountCreateProcessByAssetGroupWorkId</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getSubAccountCreateProcessesByOrgId">getSubAccountCreateProcessesByOrgId</a></li></ul></li><li><a href="module-api_ReservedDomainsApi.html">api/ReservedDomainsApi</a><ul class='methods'><li data-type='method'><a href="module-api_ReservedDomainsApi.html#getReservedDomains">getReservedDomains</a></li></ul></li><li><a href="module-api_UsersApi.html">api/UsersApi</a><ul class='methods'><li data-type='method'><a href="module-api_UsersApi.html#activateMembership">activateMembership</a></li><li data-type='method'><a href="module-api_UsersApi.html#addOrUpdateUser">addOrUpdateUser</a></li><li data-type='method'><a href="module-api_UsersApi.html#addUsers">addUsers</a></li><li data-type='method'><a href="module-api_UsersApi.html#closeMemberships">closeMemberships</a></li><li data-type='method'><a href="module-api_UsersApi.html#createUser">createUser</a></li><li data-type='method'><a href="module-api_UsersApi.html#deleteIdentities">deleteIdentities</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUserDSProfile">getUserDSProfile</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUserDSProfilesByEmail">getUserDSProfilesByEmail</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUserProfiles">getUserProfiles</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUsers">getUsers</a></li><li data-type='method'><a href="module-api_UsersApi.html#updateEmailAddress">updateEmailAddress</a></li><li data-type='method'><a href="module-api_UsersApi.html#updateUser">updateUser</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-model_AddDSGroupAndUsersResponse.html">model/AddDSGroupAndUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AddDSGroupAndUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddDSGroupUsersResponse.html">model/AddDSGroupUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AddDSGroupUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddressInformation.html">model/AddressInformation</a><ul class='methods'><li data-type='method'><a href="module-model_AddressInformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddUserResponse.html">model/AddUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AddUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddUserResponseAccountProperties.html">model/AddUserResponseAccountProperties</a><ul class='methods'><li data-type='method'><a href="module-model_AddUserResponseAccountProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountClone.html">model/AssetGroupAccountClone</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountClone.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountClones.html">model/AssetGroupAccountClones</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountClones.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountCloneSourceAccount.html">model/AssetGroupAccountCloneSourceAccount</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountCloneSourceAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountCloneTargetAccount.html">model/AssetGroupAccountCloneTargetAccount</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountCloneTargetAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountCloneTargetAccountAdmin.html">model/AssetGroupAccountCloneTargetAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountCloneTargetAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountResponse.html">model/AssetGroupAccountResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountsResponse.html">model/AssetGroupAccountsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CertificateResponse.html">model/CertificateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CertificateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CloneErrorDetails.html">model/CloneErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_CloneErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipRequest.html">model/DeleteMembershipRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipResponse.html">model/DeleteMembershipResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipsRequest.html">model/DeleteMembershipsRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipsRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipsResponse.html">model/DeleteMembershipsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteResponse.html">model/DeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteUserIdentityRequest.html">model/DeleteUserIdentityRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteUserIdentityRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocuSignAccountDomainModelAddress.html">model/DocuSignAccountDomainModelAddress</a><ul class='methods'><li data-type='method'><a href="module-model_DocuSignAccountDomainModelAddress.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DomainResponse.html">model/DomainResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DomainResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DomainsResponse.html">model/DomainsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DomainsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupAddRequest.html">model/DSGroupAddRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupAddRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupAndUsersResponse.html">model/DSGroupAndUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupAndUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupListResponse.html">model/DSGroupListResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupListResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupRequest.html">model/DSGroupRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupResponse.html">model/DSGroupResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUserResponse.html">model/DSGroupUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUsersAddRequest.html">model/DSGroupUsersAddRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUsersAddRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUsersRemoveRequest.html">model/DSGroupUsersRemoveRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUsersRemoveRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUsersResponse.html">model/DSGroupUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorDetails.html">model/ErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ForceActivateMembershipRequest.html">model/ForceActivateMembershipRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ForceActivateMembershipRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GroupRequest.html">model/GroupRequest</a><ul class='methods'><li data-type='method'><a href="module-model_GroupRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IdentityProviderResponse.html">model/IdentityProviderResponse</a><ul class='methods'><li data-type='method'><a href="module-model_IdentityProviderResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IdentityProvidersResponse.html">model/IdentityProvidersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_IdentityProvidersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IndividualMembershipDataRedactionRequest.html">model/IndividualMembershipDataRedactionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_IndividualMembershipDataRedactionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IndividualUserDataRedactionRequest.html">model/IndividualUserDataRedactionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_IndividualUserDataRedactionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IndividualUserDataRedactionResponse.html">model/IndividualUserDataRedactionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_IndividualUserDataRedactionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LinkResponse.html">model/LinkResponse</a><ul class='methods'><li data-type='method'><a href="module-model_LinkResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MemberGroupResponse.html">model/MemberGroupResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MemberGroupResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MemberGroupsResponse.html">model/MemberGroupsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MemberGroupsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MembershipDataRedactionRequest.html">model/MembershipDataRedactionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_MembershipDataRedactionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MembershipDataRedactionResponse.html">model/MembershipDataRedactionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MembershipDataRedactionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MembershipResponse.html">model/MembershipResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MembershipResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewAccountUserRequest.html">model/NewAccountUserRequest</a><ul class='methods'><li data-type='method'><a href="module-model_NewAccountUserRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewMultiProductUserAddRequest.html">model/NewMultiProductUserAddRequest</a><ul class='methods'><li data-type='method'><a href="module-model_NewMultiProductUserAddRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserRequest.html">model/NewUserRequest</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserRequestAccountProperties.html">model/NewUserRequestAccountProperties</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserRequestAccountProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserResponse.html">model/NewUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserResponseAccountProperties.html">model/NewUserResponseAccountProperties</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserResponseAccountProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OASIRRErrorDetails.html">model/OASIRRErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_OASIRRErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OASIRROrganizationAccountSettingsErrorDataResponse.html">model/OASIRROrganizationAccountSettingsErrorDataResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OASIRROrganizationAccountSettingsErrorDataResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OETRErrorDetails.html">model/OETRErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_OETRErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountRequest.html">model/OrganizationAccountRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountResponse.html">model/OrganizationAccountResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountSettingsImportRequestorResponse.html">model/OrganizationAccountSettingsImportRequestorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountSettingsImportRequestorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountSettingsImportResponse.html">model/OrganizationAccountSettingsImportResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountSettingsImportResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountSettingsImportResultResponse.html">model/OrganizationAccountSettingsImportResultResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountSettingsImportResultResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountsRequest.html">model/OrganizationAccountsRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountsRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportAccount.html">model/OrganizationExportAccount</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportDomain.html">model/OrganizationExportDomain</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportDomain.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportRequest.html">model/OrganizationExportRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportRequestorResponse.html">model/OrganizationExportRequestorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportRequestorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportResponse.html">model/OrganizationExportResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportsResponse.html">model/OrganizationExportsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportTaskResponse.html">model/OrganizationExportTaskResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportTaskResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponse.html">model/OrganizationImportResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponseErrorRollup.html">model/OrganizationImportResponseErrorRollup</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponseErrorRollup.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponseRequestor.html">model/OrganizationImportResponseRequestor</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponseRequestor.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponseWarningRollup.html">model/OrganizationImportResponseWarningRollup</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponseWarningRollup.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportsResponse.html">model/OrganizationImportsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationResponse.html">model/OrganizationResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationSalesforceAccountManagersResponse.html">model/OrganizationSalesforceAccountManagersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationSalesforceAccountManagersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationSimpleIdObject.html">model/OrganizationSimpleIdObject</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationSimpleIdObject.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationsResponse.html">model/OrganizationsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationSubscriptionResponse.html">model/OrganizationSubscriptionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationSubscriptionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationUserResponse.html">model/OrganizationUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationUsersResponse.html">model/OrganizationUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgExportSelectedAccount.html">model/OrgExportSelectedAccount</a><ul class='methods'><li data-type='method'><a href="module-model_OrgExportSelectedAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgExportSelectedDomain.html">model/OrgExportSelectedDomain</a><ul class='methods'><li data-type='method'><a href="module-model_OrgExportSelectedDomain.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportConfigurationResponse.html">model/OrgReportConfigurationResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportConfigurationResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportCreateResponse.html">model/OrgReportCreateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportCreateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportListResponse.html">model/OrgReportListResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportListResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportListResponseOrgReport.html">model/OrgReportListResponseOrgReport</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportListResponseOrgReport.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportListResponseRequestor.html">model/OrgReportListResponseRequestor</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportListResponseRequestor.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportRequest.html">model/OrgReportRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OSAMRContact.html">model/OSAMRContact</a><ul class='methods'><li data-type='method'><a href="module-model_OSAMRContact.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PagingResponseProperties.html">model/PagingResponseProperties</a><ul class='methods'><li data-type='method'><a href="module-model_PagingResponseProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionProfileRequest.html">model/PermissionProfileRequest</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionProfileRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionProfileResponse.html">model/PermissionProfileResponse</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionProfileResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionProfileResponse21.html">model/PermissionProfileResponse21</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionProfileResponse21.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionsResponse.html">model/PermissionsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfileRequest.html">model/ProductPermissionProfileRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfileRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfileResponse.html">model/ProductPermissionProfileResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfileResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfilesRequest.html">model/ProductPermissionProfilesRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfilesRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfilesResponse.html">model/ProductPermissionProfilesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfilesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RemoveDSGroupUsersResponse.html">model/RemoveDSGroupUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_RemoveDSGroupUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RemoveUserProductsResponse.html">model/RemoveUserProductsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_RemoveUserProductsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RequiredAttributeMappingResponse.html">model/RequiredAttributeMappingResponse</a><ul class='methods'><li data-type='method'><a href="module-model_RequiredAttributeMappingResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Saml2IdentityProviderResponse.html">model/Saml2IdentityProviderResponse</a><ul class='methods'><li data-type='method'><a href="module-model_Saml2IdentityProviderResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SettingResponse.html">model/SettingResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SettingResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequest.html">model/SubAccountCreateRequest</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequestSubAccountCreationSubscription.html">model/SubAccountCreateRequestSubAccountCreationSubscription</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequestSubAccountCreationSubscription.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountAdmin.html">model/SubAccountCreateRequestSubAccountCreationTargetAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountDetails.html">model/SubAccountCreateRequestSubAccountCreationTargetAccountDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateSubscriptionDetails.html">model/SubAccountCreateSubscriptionDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateSubscriptionDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateSubscriptionModuleDetails.html">model/SubAccountCreateSubscriptionModuleDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateSubscriptionModuleDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateTargetAccount.html">model/SubAccountCreateTargetAccount</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateTargetAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateTargetAccountAdmin.html">model/SubAccountCreateTargetAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateTargetAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateWorker.html">model/SubAccountCreateWorker</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateWorker.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateWorkerResponse.html">model/SubAccountCreateWorkerResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateWorkerResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountErrorDetails.html">model/SubAccountErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionPlanItemResponse.html">model/SubscriptionPlanItemResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionPlanItemResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateAccountAdmin.html">model/SubscriptionProvisionModelAccountCreateAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountDetails.html">model/SubscriptionProvisionModelAccountCreateCreateAccountDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountSubscriptionDetails.html">model/SubscriptionProvisionModelAccountCreateCreateAccountSubscriptionDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountSubscriptionDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateCreateSubAccountDetails.html">model/SubscriptionProvisionModelAccountCreateCreateSubAccountDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateCreateSubAccountDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAssetGroupWork.html">model/SubscriptionProvisionModelAssetGroupWork</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAssetGroupWork.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAssetGroupWorkResult.html">model/SubscriptionProvisionModelAssetGroupWorkResult</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAssetGroupWorkResult.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelChangeEvent.html">model/SubscriptionProvisionModelChangeEvent</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelChangeEvent.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelServiceErrorDetails.html">model/SubscriptionProvisionModelServiceErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelServiceErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateMembershipRequest.html">model/UpdateMembershipRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateMembershipRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateResponse.html">model/UpdateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUserEmailRequest.html">model/UpdateUserEmailRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUserEmailRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUserRequest.html">model/UpdateUserRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUserRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUsersEmailRequest.html">model/UpdateUsersEmailRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUsersEmailRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUsersRequest.html">model/UpdateUsersRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUsersRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserDrilldownResponse.html">model/UserDrilldownResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserDrilldownResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserIdentityRequest.html">model/UserIdentityRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserIdentityRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserIdentityResponse.html">model/UserIdentityResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserIdentityResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserProductPermissionProfilesRequest.html">model/UserProductPermissionProfilesRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserProductPermissionProfilesRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserProductPermissionProfilesResponse.html">model/UserProductPermissionProfilesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserProductPermissionProfilesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserProductProfileDeleteRequest.html">model/UserProductProfileDeleteRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserProductProfileDeleteRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UsersDrilldownResponse.html">model/UsersDrilldownResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UsersDrilldownResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UsersUpdateResponse.html">model/UsersUpdateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UsersUpdateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserUpdateResponse.html">model/UserUpdateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserUpdateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api_AccountsApi.html">api/AccountsApi</a><ul class='methods'><li data-type='method'><a href="module-api_AccountsApi.html#getGroups">getGroups</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getOrganizations">getOrganizations</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getPermissions">getPermissions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#redactIndividualMembershipData">redactIndividualMembershipData</a></li></ul></li><li><a href="module-api_BulkExportsApi.html">api/BulkExportsApi</a><ul class='methods'><li data-type='method'><a href="module-api_BulkExportsApi.html#createAccountSettingsExport">createAccountSettingsExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#createUserListExport">createUserListExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#deleteAccountSettingsExport">deleteAccountSettingsExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#deleteUserListExport">deleteUserListExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getAccountSettingsExport">getAccountSettingsExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getAccountSettingsExports">getAccountSettingsExports</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getUserListExport">getUserListExport</a></li><li data-type='method'><a href="module-api_BulkExportsApi.html#getUserListExports">getUserListExports</a></li></ul></li><li><a href="module-api_BulkImportsApi.html">api/BulkImportsApi</a><ul class='methods'><li data-type='method'><a href="module-api_BulkImportsApi.html#addBulkAccountSettingsImport">addBulkAccountSettingsImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportAddUsersRequest">createBulkImportAddUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportCloseUsersRequest">createBulkImportCloseUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportExternalCloseUsersRequest">createBulkImportExternalCloseUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportSingleAccountAddUsersRequest">createBulkImportSingleAccountAddUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportSingleAccountUpdateUsersRequest">createBulkImportSingleAccountUpdateUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#createBulkImportUpdateUsersRequest">createBulkImportUpdateUsersRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#deleteBulkAccountSettingsImport">deleteBulkAccountSettingsImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#deleteBulkUserImport">deleteBulkUserImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkAccountSettingsImport">getBulkAccountSettingsImport</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkAccountSettingsImports">getBulkAccountSettingsImports</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkUserImportCSV">getBulkUserImportCSV</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkUserImportRequest">getBulkUserImportRequest</a></li><li data-type='method'><a href="module-api_BulkImportsApi.html#getBulkUserImportRequests">getBulkUserImportRequests</a></li></ul></li><li><a href="module-api_DSGroupsApi.html">api/DSGroupsApi</a><ul class='methods'><li data-type='method'><a href="module-api_DSGroupsApi.html#addDSGroup">addDSGroup</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#addDSGroupUsers">addDSGroupUsers</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#deleteDSGroup">deleteDSGroup</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#getDSGroup">getDSGroup</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#getDSGroups">getDSGroups</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#getDSGroupUsers">getDSGroupUsers</a></li><li data-type='method'><a href="module-api_DSGroupsApi.html#removeDSGroupUsers">removeDSGroupUsers</a></li></ul></li><li><a href="module-api_IdentityProvidersApi.html">api/IdentityProvidersApi</a><ul class='methods'><li data-type='method'><a href="module-api_IdentityProvidersApi.html#getIdentityProviders">getIdentityProviders</a></li></ul></li><li><a href="module-api_OrganizationsApi.html">api/OrganizationsApi</a><ul class='methods'><li data-type='method'><a href="module-api_OrganizationsApi.html#redactIndividualUserData">redactIndividualUserData</a></li></ul></li><li><a href="module-api_ProductPermissionProfilesApi.html">api/ProductPermissionProfilesApi</a><ul class='methods'><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#addUserProductPermissionProfiles">addUserProductPermissionProfiles</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#addUserProductPermissionProfilesByEmail">addUserProductPermissionProfilesByEmail</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#getProductPermissionProfiles">getProductPermissionProfiles</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#getUserProductPermissionProfiles">getUserProductPermissionProfiles</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#getUserProductPermissionProfilesByEmail">getUserProductPermissionProfilesByEmail</a></li><li data-type='method'><a href="module-api_ProductPermissionProfilesApi.html#removeUserProductPermission">removeUserProductPermission</a></li></ul></li><li><a href="module-api_ProvisionAssetGroupApi.html">api/ProvisionAssetGroupApi</a><ul class='methods'><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#cloneAssetGroupAccount">cloneAssetGroupAccount</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#createAssetGroupAccount">createAssetGroupAccount</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getAssetGroupAccountClone">getAssetGroupAccountClone</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getAssetGroupAccountClonesByOrgId">getAssetGroupAccountClonesByOrgId</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getAssetGroupAccounts">getAssetGroupAccounts</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getOrganizationPlanItems">getOrganizationPlanItems</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getSubAccountCreateProcessByAssetGroupWorkId">getSubAccountCreateProcessByAssetGroupWorkId</a></li><li data-type='method'><a href="module-api_ProvisionAssetGroupApi.html#getSubAccountCreateProcessesByOrgId">getSubAccountCreateProcessesByOrgId</a></li></ul></li><li><a href="module-api_ReservedDomainsApi.html">api/ReservedDomainsApi</a><ul class='methods'><li data-type='method'><a href="module-api_ReservedDomainsApi.html#getReservedDomains">getReservedDomains</a></li></ul></li><li><a href="module-api_UsersApi.html">api/UsersApi</a><ul class='methods'><li data-type='method'><a href="module-api_UsersApi.html#activateMembership">activateMembership</a></li><li data-type='method'><a href="module-api_UsersApi.html#addOrUpdateUser">addOrUpdateUser</a></li><li data-type='method'><a href="module-api_UsersApi.html#addUsers">addUsers</a></li><li data-type='method'><a href="module-api_UsersApi.html#closeMemberships">closeMemberships</a></li><li data-type='method'><a href="module-api_UsersApi.html#createUser">createUser</a></li><li data-type='method'><a href="module-api_UsersApi.html#deleteIdentities">deleteIdentities</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUserDSProfile">getUserDSProfile</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUserDSProfilesByEmail">getUserDSProfilesByEmail</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUserProfiles">getUserProfiles</a></li><li data-type='method'><a href="module-api_UsersApi.html#getUsers">getUsers</a></li><li data-type='method'><a href="module-api_UsersApi.html#updateEmailAddress">updateEmailAddress</a></li><li data-type='method'><a href="module-api_UsersApi.html#updateUser">updateUser</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setJWTToken">setJWTToken</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-index.html">index</a></li><li><a href="module-model_AddDSGroupAndUsersResponse.html">model/AddDSGroupAndUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AddDSGroupAndUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddDSGroupUsersResponse.html">model/AddDSGroupUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AddDSGroupUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddressInformation.html">model/AddressInformation</a><ul class='methods'><li data-type='method'><a href="module-model_AddressInformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddUserResponse.html">model/AddUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AddUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AddUserResponseAccountProperties.html">model/AddUserResponseAccountProperties</a><ul class='methods'><li data-type='method'><a href="module-model_AddUserResponseAccountProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountClone.html">model/AssetGroupAccountClone</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountClone.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountClones.html">model/AssetGroupAccountClones</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountClones.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountCloneSourceAccount.html">model/AssetGroupAccountCloneSourceAccount</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountCloneSourceAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountCloneTargetAccount.html">model/AssetGroupAccountCloneTargetAccount</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountCloneTargetAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountCloneTargetAccountAdmin.html">model/AssetGroupAccountCloneTargetAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountCloneTargetAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountResponse.html">model/AssetGroupAccountResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AssetGroupAccountsResponse.html">model/AssetGroupAccountsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_AssetGroupAccountsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CertificateResponse.html">model/CertificateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_CertificateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_CloneErrorDetails.html">model/CloneErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_CloneErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipRequest.html">model/DeleteMembershipRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipResponse.html">model/DeleteMembershipResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipsRequest.html">model/DeleteMembershipsRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipsRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteMembershipsResponse.html">model/DeleteMembershipsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteMembershipsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteResponse.html">model/DeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DeleteUserIdentityRequest.html">model/DeleteUserIdentityRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DeleteUserIdentityRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocuSignAccountDomainModelAddress.html">model/DocuSignAccountDomainModelAddress</a><ul class='methods'><li data-type='method'><a href="module-model_DocuSignAccountDomainModelAddress.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DomainResponse.html">model/DomainResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DomainResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DomainsResponse.html">model/DomainsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DomainsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupAddRequest.html">model/DSGroupAddRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupAddRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupAndUsersResponse.html">model/DSGroupAndUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupAndUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupListResponse.html">model/DSGroupListResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupListResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupRequest.html">model/DSGroupRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupResponse.html">model/DSGroupResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUserResponse.html">model/DSGroupUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUsersAddRequest.html">model/DSGroupUsersAddRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUsersAddRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUsersRemoveRequest.html">model/DSGroupUsersRemoveRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUsersRemoveRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DSGroupUsersResponse.html">model/DSGroupUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DSGroupUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorDetails.html">model/ErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ForceActivateMembershipRequest.html">model/ForceActivateMembershipRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ForceActivateMembershipRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_GroupRequest.html">model/GroupRequest</a><ul class='methods'><li data-type='method'><a href="module-model_GroupRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IdentityProviderResponse.html">model/IdentityProviderResponse</a><ul class='methods'><li data-type='method'><a href="module-model_IdentityProviderResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IdentityProvidersResponse.html">model/IdentityProvidersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_IdentityProvidersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IndividualMembershipDataRedactionRequest.html">model/IndividualMembershipDataRedactionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_IndividualMembershipDataRedactionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IndividualUserDataRedactionRequest.html">model/IndividualUserDataRedactionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_IndividualUserDataRedactionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_IndividualUserDataRedactionResponse.html">model/IndividualUserDataRedactionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_IndividualUserDataRedactionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_LinkResponse.html">model/LinkResponse</a><ul class='methods'><li data-type='method'><a href="module-model_LinkResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MemberGroupResponse.html">model/MemberGroupResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MemberGroupResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MemberGroupsResponse.html">model/MemberGroupsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MemberGroupsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MembershipDataRedactionRequest.html">model/MembershipDataRedactionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_MembershipDataRedactionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MembershipDataRedactionResponse.html">model/MembershipDataRedactionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MembershipDataRedactionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_MembershipResponse.html">model/MembershipResponse</a><ul class='methods'><li data-type='method'><a href="module-model_MembershipResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewAccountUserRequest.html">model/NewAccountUserRequest</a><ul class='methods'><li data-type='method'><a href="module-model_NewAccountUserRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewMultiProductUserAddRequest.html">model/NewMultiProductUserAddRequest</a><ul class='methods'><li data-type='method'><a href="module-model_NewMultiProductUserAddRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserRequest.html">model/NewUserRequest</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserRequestAccountProperties.html">model/NewUserRequestAccountProperties</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserRequestAccountProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserResponse.html">model/NewUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_NewUserResponseAccountProperties.html">model/NewUserResponseAccountProperties</a><ul class='methods'><li data-type='method'><a href="module-model_NewUserResponseAccountProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OASIRRErrorDetails.html">model/OASIRRErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_OASIRRErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OASIRROrganizationAccountSettingsErrorDataResponse.html">model/OASIRROrganizationAccountSettingsErrorDataResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OASIRROrganizationAccountSettingsErrorDataResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OETRErrorDetails.html">model/OETRErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_OETRErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountRequest.html">model/OrganizationAccountRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountResponse.html">model/OrganizationAccountResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountSettingsImportRequestorResponse.html">model/OrganizationAccountSettingsImportRequestorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountSettingsImportRequestorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountSettingsImportResponse.html">model/OrganizationAccountSettingsImportResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountSettingsImportResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountSettingsImportResultResponse.html">model/OrganizationAccountSettingsImportResultResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountSettingsImportResultResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationAccountsRequest.html">model/OrganizationAccountsRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationAccountsRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportAccount.html">model/OrganizationExportAccount</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportDomain.html">model/OrganizationExportDomain</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportDomain.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportRequest.html">model/OrganizationExportRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportRequestorResponse.html">model/OrganizationExportRequestorResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportRequestorResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportResponse.html">model/OrganizationExportResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportsResponse.html">model/OrganizationExportsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationExportTaskResponse.html">model/OrganizationExportTaskResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationExportTaskResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponse.html">model/OrganizationImportResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponseErrorRollup.html">model/OrganizationImportResponseErrorRollup</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponseErrorRollup.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponseRequestor.html">model/OrganizationImportResponseRequestor</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponseRequestor.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportResponseWarningRollup.html">model/OrganizationImportResponseWarningRollup</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportResponseWarningRollup.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationImportsResponse.html">model/OrganizationImportsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationImportsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationResponse.html">model/OrganizationResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationSalesforceAccountManagersResponse.html">model/OrganizationSalesforceAccountManagersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationSalesforceAccountManagersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationSimpleIdObject.html">model/OrganizationSimpleIdObject</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationSimpleIdObject.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationsResponse.html">model/OrganizationsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationSubscriptionResponse.html">model/OrganizationSubscriptionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationSubscriptionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationUserResponse.html">model/OrganizationUserResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationUserResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrganizationUsersResponse.html">model/OrganizationUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrganizationUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgExportSelectedAccount.html">model/OrgExportSelectedAccount</a><ul class='methods'><li data-type='method'><a href="module-model_OrgExportSelectedAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgExportSelectedDomain.html">model/OrgExportSelectedDomain</a><ul class='methods'><li data-type='method'><a href="module-model_OrgExportSelectedDomain.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportConfigurationResponse.html">model/OrgReportConfigurationResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportConfigurationResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportCreateResponse.html">model/OrgReportCreateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportCreateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportListResponse.html">model/OrgReportListResponse</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportListResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportListResponseOrgReport.html">model/OrgReportListResponseOrgReport</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportListResponseOrgReport.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportListResponseRequestor.html">model/OrgReportListResponseRequestor</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportListResponseRequestor.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OrgReportRequest.html">model/OrgReportRequest</a><ul class='methods'><li data-type='method'><a href="module-model_OrgReportRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OSAMRContact.html">model/OSAMRContact</a><ul class='methods'><li data-type='method'><a href="module-model_OSAMRContact.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PagingResponseProperties.html">model/PagingResponseProperties</a><ul class='methods'><li data-type='method'><a href="module-model_PagingResponseProperties.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionProfileRequest.html">model/PermissionProfileRequest</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionProfileRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionProfileResponse.html">model/PermissionProfileResponse</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionProfileResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionProfileResponse21.html">model/PermissionProfileResponse21</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionProfileResponse21.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_PermissionsResponse.html">model/PermissionsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_PermissionsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfileRequest.html">model/ProductPermissionProfileRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfileRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfileResponse.html">model/ProductPermissionProfileResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfileResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfilesRequest.html">model/ProductPermissionProfilesRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfilesRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ProductPermissionProfilesResponse.html">model/ProductPermissionProfilesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ProductPermissionProfilesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RemoveDSGroupUsersResponse.html">model/RemoveDSGroupUsersResponse</a><ul class='methods'><li data-type='method'><a href="module-model_RemoveDSGroupUsersResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RemoveUserProductsResponse.html">model/RemoveUserProductsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_RemoveUserProductsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RequiredAttributeMappingResponse.html">model/RequiredAttributeMappingResponse</a><ul class='methods'><li data-type='method'><a href="module-model_RequiredAttributeMappingResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Saml2IdentityProviderResponse.html">model/Saml2IdentityProviderResponse</a><ul class='methods'><li data-type='method'><a href="module-model_Saml2IdentityProviderResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SettingResponse.html">model/SettingResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SettingResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequest.html">model/SubAccountCreateRequest</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequestSubAccountCreationSubscription.html">model/SubAccountCreateRequestSubAccountCreationSubscription</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequestSubAccountCreationSubscription.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountAdmin.html">model/SubAccountCreateRequestSubAccountCreationTargetAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountDetails.html">model/SubAccountCreateRequestSubAccountCreationTargetAccountDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateRequestSubAccountCreationTargetAccountDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateSubscriptionDetails.html">model/SubAccountCreateSubscriptionDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateSubscriptionDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateSubscriptionModuleDetails.html">model/SubAccountCreateSubscriptionModuleDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateSubscriptionModuleDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateTargetAccount.html">model/SubAccountCreateTargetAccount</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateTargetAccount.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateTargetAccountAdmin.html">model/SubAccountCreateTargetAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateTargetAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateWorker.html">model/SubAccountCreateWorker</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateWorker.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountCreateWorkerResponse.html">model/SubAccountCreateWorkerResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountCreateWorkerResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubAccountErrorDetails.html">model/SubAccountErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubAccountErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionPlanItemResponse.html">model/SubscriptionPlanItemResponse</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionPlanItemResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateAccountAdmin.html">model/SubscriptionProvisionModelAccountCreateAccountAdmin</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateAccountAdmin.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountDetails.html">model/SubscriptionProvisionModelAccountCreateCreateAccountDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountSubscriptionDetails.html">model/SubscriptionProvisionModelAccountCreateCreateAccountSubscriptionDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateCreateAccountSubscriptionDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAccountCreateCreateSubAccountDetails.html">model/SubscriptionProvisionModelAccountCreateCreateSubAccountDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAccountCreateCreateSubAccountDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAssetGroupWork.html">model/SubscriptionProvisionModelAssetGroupWork</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAssetGroupWork.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelAssetGroupWorkResult.html">model/SubscriptionProvisionModelAssetGroupWorkResult</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelAssetGroupWorkResult.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelChangeEvent.html">model/SubscriptionProvisionModelChangeEvent</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelChangeEvent.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_SubscriptionProvisionModelServiceErrorDetails.html">model/SubscriptionProvisionModelServiceErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_SubscriptionProvisionModelServiceErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateMembershipRequest.html">model/UpdateMembershipRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateMembershipRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateResponse.html">model/UpdateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUserEmailRequest.html">model/UpdateUserEmailRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUserEmailRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUserRequest.html">model/UpdateUserRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUserRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUsersEmailRequest.html">model/UpdateUsersEmailRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUsersEmailRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateUsersRequest.html">model/UpdateUsersRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateUsersRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserDrilldownResponse.html">model/UserDrilldownResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserDrilldownResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserIdentityRequest.html">model/UserIdentityRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserIdentityRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserIdentityResponse.html">model/UserIdentityResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserIdentityResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserProductPermissionProfilesRequest.html">model/UserProductPermissionProfilesRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserProductPermissionProfilesRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserProductPermissionProfilesResponse.html">model/UserProductPermissionProfilesResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserProductPermissionProfilesResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserProductProfileDeleteRequest.html">model/UserProductProfileDeleteRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserProductProfileDeleteRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UsersDrilldownResponse.html">model/UsersDrilldownResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UsersDrilldownResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UsersUpdateResponse.html">model/UsersUpdateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UsersUpdateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserUpdateResponse.html">model/UserUpdateResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserUpdateResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Account.html">oauth/Account</a></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">module:ApiClient</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        module:ApiClient
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="module:ApiClient"><span class="type-signature"></span>new module:ApiClient<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line183">line 183</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Manages low level client-server communications, parameter marshalling, etc. There should not be any need for an<br>
+application to use this class directly - the *Api and model classes provide the public API for the service. The<br>
+contents of this file should be regarded as internal but are documented for completeness.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id=".CollectionFormatEnum"><span class="type-signature">(static, readonly) </span>CollectionFormatEnum<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line426">line 426</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>CSV</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Comma-separated values. Value: <code>csv</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>SSV</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Space-separated values. Value: <code>ssv</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>TSV</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Tab-separated values. Value: <code>tsv</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PIPES</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Pipe(|)-separated values. Value: <code>pipes</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>MULTI</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Native array. Value: <code>multi</code></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    <p>Enumeration of collection format separator strategies.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id=".instance"><span class="type-signature">(static) </span>instance<span class="type-signature"> :<a href="module-ApiClient.html">module:ApiClient</a></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line1205">line 1205</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The default API client implementation.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="module-ApiClient.html">module:ApiClient</a></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="authentications"><span class="type-signature"></span>authentications<span class="type-signature"> :Array.&lt;String></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line212">line 212</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The authentication methods to be included for all API calls.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;String></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="basePath"><span class="type-signature"></span>basePath<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line199">line 199</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>https://www.docusign.net/restapi</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The base URL against which to resolve every API call's (relative) path.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="cache"><span class="type-signature"></span>cache<span class="type-signature"> :Boolean</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line237">line 237</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>true</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>If set to false an additional timestamp parameter is added to all API GET calls to<br>
+prevent browser caching</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="oAuthBasePath"><span class="type-signature"></span>oAuthBasePath<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line206">line 206</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>https://www.docusign.net/restapi</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The base URL against which to resolve every authentication API call's (relative) path.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="proxy"><span class="type-signature"></span>proxy<span class="type-signature"> :String</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line229">line 229</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The full URI for the desired proxy.<br>
+A complete list of supported proxies can be found here: https://www.npmjs.com/package/proxy-agent.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="timeout"><span class="type-signature"></span>timeout<span class="type-signature"> :Number</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line221">line 221</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>60000</li>
+        </ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The default HTTP timeout for all API calls.</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".constructFromObject"><span class="type-signature">(static) </span>constructFromObject<span class="signature">(data, obj)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line823">line 823</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Constructs a new map or array model from REST data.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The REST data.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>obj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The target object or array.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".convertToType"><span class="type-signature">(static) </span>convertToType<span class="signature">(data, type)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line767">line 767</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Converts a value to the specified type.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data to convert, as a string or object.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+|
+
+<span class="param-type">Object.&lt;String, Object></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The type to return. Pass a string for simple types<br>
+or the constructor function for a complex type. Pass an array containing the type name to return an array of that type. To<br>
+return an object, pass an object with one property whose name is the key type and whose value is the corresponding value type:<br>
+all properties on <code>data<code> will be converted to this type.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An instance of the specified type.</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".parseDate"><span class="type-signature">(static) </span>parseDate<span class="signature">(str)</span><span class="type-signature"> &rarr; {Date}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line754">line 754</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Parses an ISO-8601 string representation of a date value.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The date value as a string.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The parsed date object.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Date</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="addDefaultHeader"><span class="type-signature"></span>addDefaultHeader<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line274">line 274</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Adds request headers to the API client. Useful for Authentication.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="applyAuthToRequest"><span class="type-signature"></span>applyAuthToRequest<span class="signature">(requestConfig, authNames)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line490">line 490</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Applies authentication headers to the request.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>requestConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The request configuration object used for Axios Request.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>authNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of authentication method names.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="buildCollectionParam"><span class="type-signature"></span>buildCollectionParam<span class="signature">(param, collectionFormat)</span><span class="type-signature"> &rarr; {String|Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line461">line 461</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Builds a string representation of an array-type actual parameter, according to the given collection format.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array parameter.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>collectionFormat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-ApiClient.html#.CollectionFormatEnum">module:ApiClient.CollectionFormatEnum</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The array element separator strategy.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A string representation of the supplied collection, using the specified delimiter. Returns<br>
+<code>param</code> as is if <code>collectionFormat</code> is <code>multi</code>.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="buildUrl"><span class="type-signature"></span>buildUrl<span class="signature">(path, pathParams)</span><span class="type-signature"> &rarr; {String}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line313">line 313</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Builds full URL by appending the given path to the base URL and replacing path parameter place-holders with parameter values.<br>
+NOTE: query parameters are not handled here.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The path to append to the base URL.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pathParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameter values to append.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The encoded path with parameter values substituted.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="callApi"><span class="type-signature"></span>callApi<span class="signature">(path, httpMethod, pathParams, queryParams, headerParams, formParams, bodyParam, authNames, contentTypes, accepts, returnType, callback)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line579">line 579</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Invokes the REST service using the supplied settings and parameters.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The base URL to invoke.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpMethod</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The HTTP method to use.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pathParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object.&lt;String, String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of path parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>queryParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object.&lt;String, Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of query parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>headerParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object.&lt;String, Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of header parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>formParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object.&lt;String, Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A map of form parameters and their values.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bodyParam</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The value to pass as the request body.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>authNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of authentication type names.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>contentTypes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of request MIME types.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>accepts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of acceptable response MIME types.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>returnType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array</span>
+|
+
+<span class="param-type">ObjectFunction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The required type to return; can be a string for simple types or the<br>
+constructor for a complex type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-ApiClient.html#~callApiCallback">module:ApiClient~callApiCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function. If this is left undefined, this method will return a promise instead.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The Axios request object if a callback is specified, else {Promise} A <a href="https://www.promisejs.org/">Promise</a> object.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="configureJWTAuthorizationFlow"><span class="type-signature"></span>configureJWTAuthorizationFlow<span class="signature">(privateKeyFilename, oAuthBasePath, clientId, userId, expiresIn, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line1057">line 1057</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>since version 4.1.0
+Configures the current instance of ApiClient with a fresh OAuth JWT access token from DocuSign</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>privateKeyFilename</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the filename of the RSA private key</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>oAuthBasePath</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign OAuth base path (account-d.docusign.com for the developer sandbox<br>
+and account.docusign.com for the production platform)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign OAuth Client Id (AKA Integrator Key)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign user Id to be impersonated (This is a UUID)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>expiresIn</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>in seconds for the token time-to-live</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the callback function.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deserialize"><span class="type-signature"></span>deserialize<span class="signature">(response, returnType)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line544">line 544</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Deserializes an HTTP response body into a value of the specified type.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An Axios response object.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>returnType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+|
+
+<span class="param-type">Object.&lt;String, Object></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The type to return. Pass a string for simple types<br>
+or the constructor function for a complex type. Pass an array containing the type name to return an array of that type. To<br>
+return an object, pass an object with one property whose name is the key type and whose value is the corresponding value type:<br>
+all properties on <code>data<code> will be converted to this type.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A value of the specified type.</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="generateAccessToken"><span class="type-signature"></span>generateAccessToken<span class="signature">(clientId, clientSecret, code)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line896">line 896</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 client ID: Identifies the client making the request.<br>
+Client applications may be scoped to a limited set of system access.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clientSecret</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the secret key you generated when you set up the integration in DocuSign Admin console.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The authorization code that you received from the <i>getAuthorizationUri</i> callback.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>OAuthToken object.xx</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getAuthorizationUri"><span class="type-signature"></span>getAuthorizationUri<span class="signature">(clientId, scopes, redirectUri, responseType, state)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line857">line 857</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Helper method to configure the OAuth accessCode/implicit flow parameters</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 client ID: Identifies the client making the request.<br>
+Client applications may be scoped to a limited set of system access.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>scopes</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the list of requested scopes.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>redirectUri</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>this determines where to deliver the response containing the authorization code or access token.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>responseType</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>determines the response type of the authorization request.<br>
+<br><i>Note</i>: these response types are mutually exclusive for a client application.<br>
+A public/native client application may only request a response type of &quot;token&quot;;<br>
+a private/trusted client application may only request a response type of &quot;code&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Allows for arbitrary state that may be useful to your application.<br>
+The value in this parameter will be round-tripped along with the response so you can make sure it didn't change.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getBasePath"><span class="type-signature"></span>getBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line243">line 243</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets the API endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getJWTUri"><span class="type-signature"></span>getJWTUri<span class="signature">(clientId, redirectURI, oAuthBasePath)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line1022">line 1022</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Helper method to build the OAuth JWT grant uri (used once to get a user consent for impersonation)</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 client ID</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>redirectURI</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>OAuth2 redirect uri</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>oAuthBasePath</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DocuSign OAuth base path (account-d.docusign.com for the developer sandbox<br>
+and account.docusign.com for the production platform)</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>the OAuth JWT grant uri as a String</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getOAuthBasePath"><span class="type-signature"></span>getOAuthBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line258">line 258</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets the authentication server endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getUserInfo"><span class="type-signature"></span>getUserInfo<span class="signature">(accessToken)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line961">line 961</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accessToken</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the bearer token to use to authenticate for this call.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>OAuth UserInfo model</p>
+</div>
+
+
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isFileParam"><span class="type-signature"></span>isFileParam<span class="signature">(param)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line367">line 367</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Checks whether the given parameter value represents file-like content.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameter to check.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p><code>true</code> if <code>param</code> represents a file.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isJsonMime"><span class="type-signature"></span>isJsonMime<span class="signature">(contentType)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line342">line 342</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Checks whether the given content type represents JSON.<br><br>
+JSON content type examples:<br></p>
+<ul>
+<li>application/json</li>
+<li>application/json; charset=UTF8</li>
+<li>APPLICATION/JSON</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>contentType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The MIME content type to check.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p><code>true</code> if <code>contentType</code> represents JSON, otherwise <code>false</code>.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="jsonPreferredMime"><span class="type-signature"></span>jsonPreferredMime<span class="signature">(contentTypes)</span><span class="type-signature"> &rarr; {String}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line353">line 353</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Chooses a content type from the given array, with JSON preferred; i.e. return JSON if included, otherwise return the first.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>contentTypes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The chosen content type, preferring JSON.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="normalizeParams"><span class="type-signature"></span>normalizeParams<span class="signature">(params)</span><span class="type-signature"> &rarr; {Object.&lt;String, Object>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line402">line 402</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Normalizes parameter values:</p>
+<ul>
+<li>remove nils</li>
+<li>keep files and arrays</li>
+<li>format to string with `paramToString` for other cases</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object.&lt;String, Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameters as object properties.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>normalized parameters.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object.&lt;String, Object></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="paramToString"><span class="type-signature"></span>paramToString<span class="signature">(param)</span><span class="type-signature"> &rarr; {String}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line296">line 296</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Returns a string representation for an actual parameter.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The actual parameter.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The string representation of <code>param</code>.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setBasePath"><span class="type-signature"></span>setBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line250">line 250</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Sets the API endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setJWTToken"><span class="type-signature"></span>setJWTToken<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line284">line 284</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Sets default JWT authorization token for APIs.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setOAuthBasePath"><span class="type-signature"></span>setOAuthBasePath<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line265">line 265</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Sets the authentication server endpoint base URL.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+
+    
+
+    <h4 class="name" id="~callApiCallback"><span class="type-signature"></span>callApiCallback<span class="signature">(error, data, response)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ApiClient.js.html">ApiClient.js</a>, <a href="ApiClient.js.html#line554">line 554</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional)Callback function to receive the result of the <operationId> operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The complete HTTP response.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Wed Aug 28 2024 07:44:06 GMT-0700 (Pacific Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
