@@ -1,5 +1,5 @@
 /**
- * DocuSign Admin API
+ * Docusign Admin API
  * An API for an organization administrator to manage organizations, accounts and users
  *
  * OpenAPI spec version: v2.1
@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AssetGroupAccountCloneSourceAccount', 'model/AssetGroupAccountCloneTargetAccount', 'model/CloneErrorDetails'], factory);
+    define(['ApiClient', 'model/AssetGroupAccountCloneSourceAccount', 'model/AssetGroupAccountCloneTargetAccount', 'model/SubAccountErrorDetails'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AssetGroupAccountCloneSourceAccount'), require('./AssetGroupAccountCloneTargetAccount'), require('./CloneErrorDetails'));
+    module.exports = factory(require('../ApiClient'), require('./AssetGroupAccountCloneSourceAccount'), require('./AssetGroupAccountCloneTargetAccount'), require('./SubAccountErrorDetails'));
   } else {
     // Browser globals (root is window)
     if (!root.DocusignAdmin) {
       root.DocusignAdmin = {};
     }
-    root.DocusignAdmin.AssetGroupAccountClone = factory(root.DocusignAdmin.ApiClient, root.DocusignAdmin.AssetGroupAccountCloneSourceAccount, root.DocusignAdmin.AssetGroupAccountCloneTargetAccount, root.DocusignAdmin.CloneErrorDetails);
+    root.DocusignAdmin.AssetGroupAccountClone = factory(root.DocusignAdmin.ApiClient, root.DocusignAdmin.AssetGroupAccountCloneSourceAccount, root.DocusignAdmin.AssetGroupAccountCloneTargetAccount, root.DocusignAdmin.SubAccountErrorDetails);
   }
-}(this, function(ApiClient, AssetGroupAccountCloneSourceAccount, AssetGroupAccountCloneTargetAccount, CloneErrorDetails) {
+}(this, function(ApiClient, AssetGroupAccountCloneSourceAccount, AssetGroupAccountCloneTargetAccount, SubAccountErrorDetails) {
   'use strict';
 
 
@@ -96,7 +96,7 @@
         obj['message'] = ApiClient.convertToType(data['message'], 'String');
       }
       if (data.hasOwnProperty('cloneProcessingFailureDetails')) {
-        obj['cloneProcessingFailureDetails'] = CloneErrorDetails.constructFromObject(data['cloneProcessingFailureDetails']);
+        obj['cloneProcessingFailureDetails'] = SubAccountErrorDetails.constructFromObject(data['cloneProcessingFailureDetails']);
       }
     }
     return obj;
@@ -169,7 +169,7 @@
   exports.prototype['message'] = undefined;
   /**
    * The processing failures if the work is in PendingError/ProcessingError status.
-   * @member {module:model/CloneErrorDetails} cloneProcessingFailureDetails
+   * @member {module:model/SubAccountErrorDetails} cloneProcessingFailureDetails
    */
   exports.prototype['cloneProcessingFailureDetails'] = undefined;
 
@@ -208,7 +208,13 @@
      * value: "AccountAssetCreate"
      * @const
      */
-    accountAssetCreate: "AccountAssetCreate"
+    accountAssetCreate: "AccountAssetCreate",
+
+    /**
+     * value: "SubscriptionSync"
+     * @const
+     */
+    subscriptionSync: "SubscriptionSync"
   };
 
   /**
@@ -234,6 +240,12 @@
      * @const
      */
     processing: "Processing",
+
+    /**
+     * value: "ProcessingOnHold"
+     * @const
+     */
+    processingOnHold: "ProcessingOnHold",
 
     /**
      * value: "PendingError"
