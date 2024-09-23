@@ -42,16 +42,6 @@
     "User-Agent": `Swagger-Codegen/node/${process.version}`,
   };
 
-  var removeNulls = function (obj) {
-    var isArray = obj instanceof Array;
-    for (var k in obj) {
-      if (typeof obj[k] === "object") removeNulls(obj[k]);
-      if (isArray && obj.length === k) removeNulls(obj);
-      if (obj[k] instanceof Array && obj[k].length === 0) delete obj[k];
-    }
-    return obj;
-  };
-
   var generateAndSignJWTAssertion = function (
     clientId,
     scopes,
@@ -665,7 +655,7 @@
         var formAttachmentKey = Object.keys(formParams).find(function (key) {
           return _this.isFileParam(_formParams[key]);
         });
-        requestConfig.data = removeNulls(formParams[formAttachmentKey]);
+        requestConfig.data = formParams[formAttachmentKey];
       } else {
         //automatic serialization for formData is supported in axios as of 0.27.0. ref: https://axios-http.com/docs/multipart
         requestConfig.headers = {
@@ -676,7 +666,7 @@
         requestConfig.data = _formParams;
       }
     } else if (body) {
-      requestConfig.data = removeNulls(body);
+      requestConfig.data = body;
     }
 
     var accept = this.jsonPreferredMime(accepts);
