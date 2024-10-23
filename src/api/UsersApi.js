@@ -659,7 +659,7 @@
      * @param {String} optsOrCallback.accountId Select users that are members of the specified account. At least one of email, account_id or organization_reserved_domain_id must be specified.
      * @param {String} optsOrCallback.organizationReservedDomainId Select users that are in the specified domain. At least one of email, account_id or organization_reserved_domain_id must be specified.
      * @param {String} optsOrCallback.lastModifiedSince Select users whose data have been modified since the date specified;  account_id or organization_reserved_domain_id must be specified.
-     * @param {Boolean} optsOrCallback.includeDsGroups Select users with groups the users belong to; The organization must have entitlement AllowMultiApplication enabled.
+     * @param {Boolean} optsOrCallback.includeDsGroups Select users with groups the users belong to; account_id must be specified. The organization must have the entitlement AllowMultiApplication enabled.
      * @param {module:api/UsersApi~getUsersCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/OrganizationUsersResponse}
      */

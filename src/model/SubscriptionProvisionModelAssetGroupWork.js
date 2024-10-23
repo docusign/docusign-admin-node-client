@@ -127,7 +127,7 @@
         obj['CreatedBy'] = ApiClient.convertToType(data['CreatedBy'], 'String');
       }
       if (data.hasOwnProperty('CreatedByType')) {
-        obj['CreatedByType'] = ApiClient.convertToType(data['CreatedByType'], 'String');
+        obj['CreatedByType'] = ApiClient.convertToType(data['CreatedByType'], 'Number');
       }
       if (data.hasOwnProperty('CreatedDate')) {
         obj['CreatedDate'] = ApiClient.convertToType(data['CreatedDate'], 'Date');
@@ -136,7 +136,7 @@
         obj['UpdatedBy'] = ApiClient.convertToType(data['UpdatedBy'], 'String');
       }
       if (data.hasOwnProperty('UpdatedByType')) {
-        obj['UpdatedByType'] = ApiClient.convertToType(data['UpdatedByType'], 'String');
+        obj['UpdatedByType'] = ApiClient.convertToType(data['UpdatedByType'], 'Number');
       }
       if (data.hasOwnProperty('UpdatedDate')) {
         obj['UpdatedDate'] = ApiClient.convertToType(data['UpdatedDate'], 'Date');
@@ -245,6 +245,7 @@
    */
   exports.prototype['CreatedBy'] = undefined;
   /**
+   * 0 stands for Application, 1 stands for User, 2 stands for Generic, 3 stands for RestAPIAuth, 4 stands for Resource, 5 stands for Restricted
    * @member {module:model/SubscriptionProvisionModelAssetGroupWork.CreatedByTypeEnum} CreatedByType
    */
   exports.prototype['CreatedByType'] = undefined;
@@ -257,6 +258,7 @@
    */
   exports.prototype['UpdatedBy'] = undefined;
   /**
+   * 0 stands for Application, 1 stands for User, 2 stands for Generic, 3 stands for RestAPIAuth, 4 stands for Resource, 5 stands for Restricted
    * @member {module:model/SubscriptionProvisionModelAssetGroupWork.UpdatedByTypeEnum} UpdatedByType
    */
   exports.prototype['UpdatedByType'] = undefined;
@@ -376,88 +378,88 @@
 
   /**
    * Allowed values for the <code>createdByType</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.CreatedByTypeEnum = {
     /**
-     * value: "Application"
+     * value: 0
      * @const
      */
-    application: "Application",
+    _0: 0,
 
     /**
-     * value: "User"
+     * value: 1
      * @const
      */
-    user: "User",
+    _1: 1,
 
     /**
-     * value: "Generic"
+     * value: 2
      * @const
      */
-    generic: "Generic",
+    _2: 2,
 
     /**
-     * value: "RestAPIAuth"
+     * value: 3
      * @const
      */
-    restAPIAuth: "RestAPIAuth",
+    _3: 3,
 
     /**
-     * value: "Resource"
+     * value: 4
      * @const
      */
-    resource: "Resource",
+    _4: 4,
 
     /**
-     * value: "Restricted"
+     * value: 5
      * @const
      */
-    restricted: "Restricted"
+    _5: 5
   };
 
   /**
    * Allowed values for the <code>updatedByType</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.UpdatedByTypeEnum = {
     /**
-     * value: "Application"
+     * value: 0
      * @const
      */
-    application: "Application",
+    _0: 0,
 
     /**
-     * value: "User"
+     * value: 1
      * @const
      */
-    user: "User",
+    _1: 1,
 
     /**
-     * value: "Generic"
+     * value: 2
      * @const
      */
-    generic: "Generic",
+    _2: 2,
 
     /**
-     * value: "RestAPIAuth"
+     * value: 3
      * @const
      */
-    restAPIAuth: "RestAPIAuth",
+    _3: 3,
 
     /**
-     * value: "Resource"
+     * value: 4
      * @const
      */
-    resource: "Resource",
+    _4: 4,
 
     /**
-     * value: "Restricted"
+     * value: 5
      * @const
      */
-    restricted: "Restricted"
+    _5: 5
   };
 
 

@@ -73,7 +73,7 @@
         obj['AdminUser'] = SubscriptionProvisionModelAccountCreateAccountAdmin.constructFromObject(data['AdminUser']);
       }
       if (data.hasOwnProperty('BillingProfileType')) {
-        obj['BillingProfileType'] = ApiClient.convertToType(data['BillingProfileType'], 'String');
+        obj['BillingProfileType'] = ApiClient.convertToType(data['BillingProfileType'], 'Number');
       }
     }
     return obj;
@@ -104,6 +104,7 @@
    */
   exports.prototype['AdminUser'] = undefined;
   /**
+   * 0 stands for Web, 1 stands for Direct
    * @member {module:model/SubscriptionProvisionModelAccountCreateCreateAccountDetails.BillingProfileTypeEnum} BillingProfileType
    */
   exports.prototype['BillingProfileType'] = undefined;
@@ -111,21 +112,21 @@
 
   /**
    * Allowed values for the <code>billingProfileType</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.BillingProfileTypeEnum = {
     /**
-     * value: "Web"
+     * value: 0
      * @const
      */
-    web: "Web",
+    _0: 0,
 
     /**
-     * value: "Direct"
+     * value: 1
      * @const
      */
-    direct: "Direct"
+    _1: 1
   };
 
 
