@@ -3,6 +3,11 @@
 See [DocuSign Support Center](https://support.docusign.com/en/releasenotes/) for Product Release Notes.
 
 
+## [v3.0.0] - Admin API v2.1-1.4.1 - 2024-10-28
+### Changed
+- Added support for version v2.1-1.4.1 of the DocuSign Admin API.
+- Updated the SDK release version.
+
 ## [v3.0.0-rc3] - Admin API v2.1-1.4.1 - 2024-10-22
 ### Changed
 - Added support for version v2.1-1.4.1 of the DocuSign Admin API.
