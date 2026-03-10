@@ -78,14 +78,35 @@
       if (data.hasOwnProperty('created_on')) {
         obj['created_on'] = ApiClient.convertToType(data['created_on'], 'Date');
       }
+      if (data.hasOwnProperty('closed_on')) {
+        obj['closed_on'] = ApiClient.convertToType(data['closed_on'], 'Date');
+      }
       if (data.hasOwnProperty('membership_created_on')) {
         obj['membership_created_on'] = ApiClient.convertToType(data['membership_created_on'], 'Date');
+      }
+      if (data.hasOwnProperty('membership_closed_on')) {
+        obj['membership_closed_on'] = ApiClient.convertToType(data['membership_closed_on'], 'Date');
       }
       if (data.hasOwnProperty('ds_groups')) {
         obj['ds_groups'] = ApiClient.convertToType(data['ds_groups'], [DSGroupResponse]);
       }
       if (data.hasOwnProperty('membership_id')) {
         obj['membership_id'] = ApiClient.convertToType(data['membership_id'], 'String');
+      }
+      if (data.hasOwnProperty('is_membership_managed_by_scim')) {
+        obj['is_membership_managed_by_scim'] = ApiClient.convertToType(data['is_membership_managed_by_scim'], 'Boolean');
+      }
+      if (data.hasOwnProperty('is_managed_by_scim')) {
+        obj['is_managed_by_scim'] = ApiClient.convertToType(data['is_managed_by_scim'], 'Boolean');
+      }
+      if (data.hasOwnProperty('license_type')) {
+        obj['license_type'] = ApiClient.convertToType(data['license_type'], 'String');
+      }
+      if (data.hasOwnProperty('subscription_id')) {
+        obj['subscription_id'] = ApiClient.convertToType(data['subscription_id'], 'String');
+      }
+      if (data.hasOwnProperty('plan_name')) {
+        obj['plan_name'] = ApiClient.convertToType(data['plan_name'], 'String');
       }
     }
     return obj;
@@ -124,9 +145,17 @@
    */
   exports.prototype['created_on'] = undefined;
   /**
+   * @member {Date} closed_on
+   */
+  exports.prototype['closed_on'] = undefined;
+  /**
    * @member {Date} membership_created_on
    */
   exports.prototype['membership_created_on'] = undefined;
+  /**
+   * @member {Date} membership_closed_on
+   */
+  exports.prototype['membership_closed_on'] = undefined;
   /**
    * @member {Array.<module:model/DSGroupResponse>} ds_groups
    */
@@ -135,6 +164,26 @@
    * @member {String} membership_id
    */
   exports.prototype['membership_id'] = undefined;
+  /**
+   * @member {Boolean} is_membership_managed_by_scim
+   */
+  exports.prototype['is_membership_managed_by_scim'] = undefined;
+  /**
+   * @member {Boolean} is_managed_by_scim
+   */
+  exports.prototype['is_managed_by_scim'] = undefined;
+  /**
+   * @member {String} license_type
+   */
+  exports.prototype['license_type'] = undefined;
+  /**
+   * @member {String} subscription_id
+   */
+  exports.prototype['subscription_id'] = undefined;
+  /**
+   * @member {String} plan_name
+   */
+  exports.prototype['plan_name'] = undefined;
 
 
 

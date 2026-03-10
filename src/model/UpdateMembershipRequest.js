@@ -76,6 +76,9 @@
       if (data.hasOwnProperty('access_code')) {
         obj['access_code'] = ApiClient.convertToType(data['access_code'], 'String');
       }
+      if (data.hasOwnProperty('license_type')) {
+        obj['license_type'] = ApiClient.convertToType(data['license_type'], 'String');
+      }
     }
     return obj;
   }
@@ -108,6 +111,10 @@
    * @member {String} access_code
    */
   exports.prototype['access_code'] = undefined;
+  /**
+   * @member {String} license_type
+   */
+  exports.prototype['license_type'] = undefined;
 
 
 

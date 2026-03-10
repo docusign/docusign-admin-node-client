@@ -60,7 +60,7 @@
      */
 
     /**
-     * Creates a  new Account Setting Export request.
+     * Creates a new Account Setting Export request.
      * Required scopes: account_read
      * @param {String} organizationId The organization ID Guid
      * @param {module:model/OrganizationAccountsRequest} request Request body containing details about the accounts be compared

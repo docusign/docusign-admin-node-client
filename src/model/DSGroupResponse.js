@@ -87,6 +87,9 @@
       if (data.hasOwnProperty('account_name')) {
         obj['account_name'] = ApiClient.convertToType(data['account_name'], 'String');
       }
+      if (data.hasOwnProperty('is_managed_by_scim')) {
+        obj['is_managed_by_scim'] = ApiClient.convertToType(data['is_managed_by_scim'], 'Boolean');
+      }
     }
     return obj;
   }
@@ -135,6 +138,10 @@
    * @member {String} account_name
    */
   exports.prototype['account_name'] = undefined;
+  /**
+   * @member {Boolean} is_managed_by_scim
+   */
+  exports.prototype['is_managed_by_scim'] = undefined;
 
 
 

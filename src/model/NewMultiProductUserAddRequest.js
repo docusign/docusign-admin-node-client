@@ -89,6 +89,9 @@
       if (data.hasOwnProperty('auto_activate_memberships')) {
         obj['auto_activate_memberships'] = ApiClient.convertToType(data['auto_activate_memberships'], 'Boolean');
       }
+      if (data.hasOwnProperty('license_type')) {
+        obj['license_type'] = ApiClient.convertToType(data['license_type'], 'String');
+      }
     }
     return obj;
   }
@@ -137,6 +140,10 @@
    * @member {Boolean} auto_activate_memberships
    */
   exports.prototype['auto_activate_memberships'] = undefined;
+  /**
+   * @member {String} license_type
+   */
+  exports.prototype['license_type'] = undefined;
 
 
 
