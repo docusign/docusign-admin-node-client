@@ -456,6 +456,7 @@
      * @param {String} userId The user ID Guid
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
      * @param {Boolean} optsOrCallback.sort Sorts user information by account name ascending
+     * @param {Boolean} optsOrCallback.includeLicense When true: additional details about the user's license will be included in the response. The account must have an IAM plan with licenses.
      * @param {module:api/UsersApi~getUserDSProfileCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UsersDrilldownResponse}
      */
@@ -491,7 +492,8 @@
         'userId': userId
       };
       var queryParams = {
-        'sort': optsOrCallback['sort']
+        'sort': optsOrCallback['sort'],
+        'include_license': optsOrCallback['includeLicense']
       };
       var headerParams = {
       };
@@ -525,6 +527,7 @@
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
      * @param {String} optsOrCallback.email The email address of the user
      * @param {Boolean} optsOrCallback.sort Sorts user information by account name ascending
+     * @param {Boolean} optsOrCallback.includeLicense When true: additional details about the user's license will be included in the response. The account must have an IAM plan with licenses.
      * @param {module:api/UsersApi~getUserDSProfilesByEmailCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UsersDrilldownResponse}
      */
@@ -555,7 +558,8 @@
       };
       var queryParams = {
         'email': optsOrCallback['email'],
-        'sort': optsOrCallback['sort']
+        'sort': optsOrCallback['sort'],
+        'include_license': optsOrCallback['includeLicense']
       };
       var headerParams = {
       };
@@ -588,6 +592,7 @@
      * @param {String} organizationId The organization ID Guid
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
      * @param {String} optsOrCallback.email The email address
+     * @param {Boolean} optsOrCallback.includeLicense When true: additional details about the user's license will be included in the response. The account must have an IAM plan with licenses.
      * @param {module:api/UsersApi~getUserProfilesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UsersDrilldownResponse}
      */
@@ -617,7 +622,8 @@
         'organizationId': organizationId
       };
       var queryParams = {
-        'email': optsOrCallback['email']
+        'email': optsOrCallback['email'],
+        'include_license': optsOrCallback['includeLicense']
       };
       var headerParams = {
       };
@@ -660,6 +666,7 @@
      * @param {String} optsOrCallback.organizationReservedDomainId Select users that are in the specified domain. At least one of email, account_id or organization_reserved_domain_id must be specified.
      * @param {String} optsOrCallback.lastModifiedSince Select users whose data have been modified since the date specified;  account_id or organization_reserved_domain_id must be specified.
      * @param {Boolean} optsOrCallback.includeDsGroups Select users with groups the users belong to; account_id must be specified. The organization must have the entitlement AllowMultiApplication enabled.
+     * @param {Boolean} optsOrCallback.includeLicense When true: additional details about the user's license will be included in the response; account_id must be specified and the account must have an IAM plan with licenses.
      * @param {module:api/UsersApi~getUsersCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/OrganizationUsersResponse}
      */
@@ -699,7 +706,8 @@
         'account_id': optsOrCallback['accountId'],
         'organization_reserved_domain_id': optsOrCallback['organizationReservedDomainId'],
         'last_modified_since': optsOrCallback['lastModifiedSince'],
-        'include_ds_groups': optsOrCallback['includeDsGroups']
+        'include_ds_groups': optsOrCallback['includeDsGroups'],
+        'include_license': optsOrCallback['includeLicense']
       };
       var headerParams = {
       };
@@ -789,10 +797,19 @@
      * Required scopes: user_write
      * @param {String} organizationId The organization ID Guid
      * @param {module:model/UpdateUsersRequest} request The user details to update
+     * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {Boolean} optsOrCallback.applyLicenseOverride If an account has an IAM plan with licenses, this query specifies how a user's license is handled. Values: true - Updates the user's existing license; false - Adds a license to the user
      * @param {module:api/UsersApi~updateUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UsersUpdateResponse}
      */
-    this.updateUser = function(request, organizationId, callback) {
+    this.updateUser = function(request, organizationId, optsOrCallback, callback) {
+      optsOrCallback = optsOrCallback || {};
+
+      if (typeof optsOrCallback === 'function') {
+        callback = optsOrCallback;
+        optsOrCallback = {};
+      }
+
       var postBody = request;
 
       // verify the required parameter 'organizationId' is set
@@ -816,6 +833,7 @@
         'organizationId': organizationId
       };
       var queryParams = {
+        'apply_license_override': optsOrCallback['applyLicenseOverride']
       };
       var headerParams = {
       };

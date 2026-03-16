@@ -54,6 +54,9 @@
     if (data) {
       obj = obj || new exports();
 
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'String');
+      }
       if (data.hasOwnProperty('email')) {
         obj['email'] = ApiClient.convertToType(data['email'], 'String');
       }
@@ -84,10 +87,23 @@
       if (data.hasOwnProperty('is_admin')) {
         obj['is_admin'] = ApiClient.convertToType(data['is_admin'], 'Boolean');
       }
+      if (data.hasOwnProperty('license_type')) {
+        obj['license_type'] = ApiClient.convertToType(data['license_type'], 'String');
+      }
+      if (data.hasOwnProperty('subscription_id')) {
+        obj['subscription_id'] = ApiClient.convertToType(data['subscription_id'], 'String');
+      }
+      if (data.hasOwnProperty('plan_name')) {
+        obj['plan_name'] = ApiClient.convertToType(data['plan_name'], 'String');
+      }
     }
     return obj;
   }
 
+  /**
+   * @member {String} id
+   */
+  exports.prototype['id'] = undefined;
   /**
    * @member {String} email
    */
@@ -128,6 +144,18 @@
    * @member {Boolean} is_admin
    */
   exports.prototype['is_admin'] = undefined;
+  /**
+   * @member {String} license_type
+   */
+  exports.prototype['license_type'] = undefined;
+  /**
+   * @member {String} subscription_id
+   */
+  exports.prototype['subscription_id'] = undefined;
+  /**
+   * @member {String} plan_name
+   */
+  exports.prototype['plan_name'] = undefined;
 
 
 

@@ -57,6 +57,9 @@
       if (data.hasOwnProperty('users')) {
         obj['users'] = ApiClient.convertToType(data['users'], [UpdateUserRequest]);
       }
+      if (data.hasOwnProperty('auto_activate_memberships_on_reactivation')) {
+        obj['auto_activate_memberships_on_reactivation'] = ApiClient.convertToType(data['auto_activate_memberships_on_reactivation'], 'Boolean');
+      }
     }
     return obj;
   }
@@ -65,6 +68,11 @@
    * @member {Array.<module:model/UpdateUserRequest>} users
    */
   exports.prototype['users'] = undefined;
+  /**
+   * When set to **true**, the user's memberships will be automatically activated on reactivation.
+   * @member {Boolean} auto_activate_memberships_on_reactivation
+   */
+  exports.prototype['auto_activate_memberships_on_reactivation'] = undefined;
 
 
 

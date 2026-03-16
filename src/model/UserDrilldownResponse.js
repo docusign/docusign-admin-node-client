@@ -108,6 +108,18 @@
       if (data.hasOwnProperty('device_verification_enabled')) {
         obj['device_verification_enabled'] = ApiClient.convertToType(data['device_verification_enabled'], 'Boolean');
       }
+      if (data.hasOwnProperty('require_two_step_verification')) {
+        obj['require_two_step_verification'] = ApiClient.convertToType(data['require_two_step_verification'], 'Boolean');
+      }
+      if (data.hasOwnProperty('allow_two_step_verification_snooze')) {
+        obj['allow_two_step_verification_snooze'] = ApiClient.convertToType(data['allow_two_step_verification_snooze'], 'Boolean');
+      }
+      if (data.hasOwnProperty('allow_extend_org_admin_rights_to_self')) {
+        obj['allow_extend_org_admin_rights_to_self'] = ApiClient.convertToType(data['allow_extend_org_admin_rights_to_self'], 'Boolean');
+      }
+      if (data.hasOwnProperty('is_managed_by_scim')) {
+        obj['is_managed_by_scim'] = ApiClient.convertToType(data['is_managed_by_scim'], 'Boolean');
+      }
     }
     return obj;
   }
@@ -184,6 +196,22 @@
    * @member {Boolean} device_verification_enabled
    */
   exports.prototype['device_verification_enabled'] = undefined;
+  /**
+   * @member {Boolean} require_two_step_verification
+   */
+  exports.prototype['require_two_step_verification'] = undefined;
+  /**
+   * @member {Boolean} allow_two_step_verification_snooze
+   */
+  exports.prototype['allow_two_step_verification_snooze'] = undefined;
+  /**
+   * @member {Boolean} allow_extend_org_admin_rights_to_self
+   */
+  exports.prototype['allow_extend_org_admin_rights_to_self'] = undefined;
+  /**
+   * @member {Boolean} is_managed_by_scim
+   */
+  exports.prototype['is_managed_by_scim'] = undefined;
 
 
 

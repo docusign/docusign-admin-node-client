@@ -72,6 +72,18 @@
       if (data.hasOwnProperty('job_title')) {
         obj['job_title'] = ApiClient.convertToType(data['job_title'], 'String');
       }
+      if (data.hasOwnProperty('license_type')) {
+        obj['license_type'] = ApiClient.convertToType(data['license_type'], 'String');
+      }
+      if (data.hasOwnProperty('subscription_id')) {
+        obj['subscription_id'] = ApiClient.convertToType(data['subscription_id'], 'String');
+      }
+      if (data.hasOwnProperty('plan_name')) {
+        obj['plan_name'] = ApiClient.convertToType(data['plan_name'], 'String');
+      }
+      if (data.hasOwnProperty('license_status')) {
+        obj['license_status'] = ApiClient.convertToType(data['license_status'], 'String');
+      }
     }
     return obj;
   }
@@ -100,6 +112,22 @@
    * @member {String} job_title
    */
   exports.prototype['job_title'] = undefined;
+  /**
+   * @member {String} license_type
+   */
+  exports.prototype['license_type'] = undefined;
+  /**
+   * @member {String} subscription_id
+   */
+  exports.prototype['subscription_id'] = undefined;
+  /**
+   * @member {String} plan_name
+   */
+  exports.prototype['plan_name'] = undefined;
+  /**
+   * @member {String} license_status
+   */
+  exports.prototype['license_status'] = undefined;
 
 
 
